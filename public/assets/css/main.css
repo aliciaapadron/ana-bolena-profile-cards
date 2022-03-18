@@ -13,4 +13,20 @@
     margin-top: 31px;
     margin-bottom: 30px; }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18px;
+  padding-bottom: 20px; }
+  .footer__text {
+    font-size: 14px;
+    color: #6b6b6b;
+    font-family: "Open Sans", sans-serif; }
+  .footer__img {
+    width: 103px;
+    height: 40px;
+    margin-top: 12px; }
+
 /*# sourceMappingURL=main.css.map */
