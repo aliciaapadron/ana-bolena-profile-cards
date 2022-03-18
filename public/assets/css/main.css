@@ -3,4 +3,14 @@
   margin: 0;
   padding: 0; }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__img {
+    width: 201px;
+    height: 50px;
+    margin-top: 31px;
+    margin-bottom: 30px; }
+
 /*# sourceMappingURL=main.css.map */
