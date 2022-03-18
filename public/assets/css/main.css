@@ -29,4 +29,80 @@
     height: 40px;
     margin-top: 12px; }
 
+.section1 {
+  padding: 38px 0 40px 0;
+  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed); }
+  .section1__container {
+    border: solid 1px #fff;
+    width: 75px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; }
+    .section1__container--img {
+      width: 20px; }
+    .section1__container--button {
+      background-color: transparent;
+      border: none;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "Open Sans", sans-serif;
+      color: #54585a;
+      padding-top: 20px;
+      padding-left: 8px; }
+  .section1 .containerdiv {
+    padding: 0 19%; }
+  .section1 .section1__containerphoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .section1 .section1__containerphoto--article {
+      width: 240px;
+      height: 329px;
+      background-color: #fff;
+      border-radius: 2px;
+      box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+      background-color: #fff; }
+    .section1 .section1__containerphoto--img {
+      padding: 10px 0; }
+
+.containercard {
+  display: flex;
+  padding-top: 21px; }
+  .containercard__rectangle {
+    width: 5px;
+    height: 42px;
+    background-color: #438792; }
+  .containercard__article--title {
+    font-family: "Montserrat", sans-serif;
+    color: #114e4e;
+    font-size: 18px;
+    padding-left: 20px; }
+  .containercard__article--text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #54585a;
+    padding-left: 20px; }
+
+.list {
+  list-style: none;
+  margin-left: 20px;
+  display: flex; }
+  .list__item {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    border: solid 2px #a2deaf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; }
+    .list__item--link {
+      color: #114e4e;
+      text-decoration: none; }
+
 /*# sourceMappingURL=main.css.map */
