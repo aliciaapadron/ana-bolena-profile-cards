@@ -1,38 +1,73 @@
-<fieldset>
-  <i class="fa-solid fa-chevron-down"></i>
-  <a href="http://"><i class="fa-solid fa-keyboard"></i></a>
-  <legend>Rellena</legend>
-  <form action="">
-    <label for="name">Nombre completo</label>
-    <input type="text" id="name" name="name" placeholder="Ej:Sally Jill" />
-    <label for="job">Puesto</label>
-    <input type="text" id="job" name="job" placeholder="Ej:Front-end unicorn" />
-  </form>
-  <label for="img">
-    <div>
-      <label for="file">Añadir imagen</label>
-      <input type="file" />
-    </div>
-  </label>
+<fieldset class="fill__fieldset">
+  <div class="fill__title">
+    <i class="fa-solid fa-keyboard fill__keyboard"></i>
+    <!-- <legend class="fill__legend">Rellena</legend> -->
+    <!-- he optado por usar p en vez de legend porque me estaba suponiendo mucho lío -->
+    <p class="fill__legend">Rellena</p>
+    <i class="fa-solid fa-chevron-down fill__arrow"></i>
+  </div>
 
-  <form action="">
-    <label for="email">Email</label>
+  <!-- habría que borrar las dos lineas siguientes pero al hacerlo me cambia el estilo -->
+  <form class="fill__form" action=""></form>
+
+  <form class="fill__form" action="">
+    <label class="form__label" for="name">Nombre completo</label>
     <input
+      class="form__field"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Ej: Sally Jill"
+    />
+    <label class="form__label" for="job">Puesto</label>
+    <input
+      class="form__field"
+      type="text"
+      id="job"
+      name="job"
+      placeholder="Ej: Front-end unicorn"
+    />
+
+    <label class="form__label form__img" for="img"> Imagen de perfil </label>
+
+    <span class="span__row">
+      <label for="file-upload" class="subir">Añadir imagen</label>
+      <input type="file" name="" id="file-upload" style="display: none" />
+
+      <div class="form__box"></div>
+    </span>
+
+    <label class="form__label" for="email">Email</label>
+    <input
+      class="form__field"
       type="email"
       id="email"
       name="email"
-      placeholder="Ej:sally-hill@gmail.com"
+      placeholder="Ej: sally-hill@gmail.com"
     />
-    <label for="“telephone”">Teléfono</label>
-    <input type="“tel”" id="“telephone”" name="“telephone”" />
-    <label for="text">Linkedin</label>
+    <label class="form__label" for="“telephone”">Teléfono</label>
     <input
+      class="form__field"
+      type="“tel”"
+      id="“telephone"
+      name="telephone"
+      placeholder="Ej: 55-555-55"
+    />
+    <label class="form__label" for="text">Linkedin</label>
+    <input
+      class="form__field"
       type="text"
       id="linkedin"
       name="linkedin"
-      placeholder="Ej:linkedin.con/in/sally.hill"
+      placeholder="Ej: linkedin.con/in/sally.hill"
     />
-    <label for="text">Github</label>
-    <input type="text" id="github" name="github" placeholder="Ej:@sally-hill" />
+    <label class="form__label" for="text">Github</label>
+    <input
+      class="form__field"
+      type="text"
+      id="github"
+      name="github"
+      placeholder="Ej: @sally-hill"
+    />
   </form>
 </fieldset>

@@ -291,6 +291,108 @@
 #three-c {
   background-color: #a0c0cf; }
 
+.fill__fieldset {
+  border-color: transparent;
+  background-color: #ffffff;
+  padding: 3%; }
+
+.fill__title {
+  display: flex;
+  flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+  border-top: 1px solid #6b6b6b58;
+  max-width: 329px;
+  align-items: center;
+  justify-content: space-between; }
+
+.fill__keyboard {
+  width: 6%;
+  color: #e17334; }
+
+.fill__arrow {
+  width: 5%; }
+
+.fill__legend {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  color: #54585a;
+  width: 89%;
+  text-align: left; }
+
+.fill__form {
+  display: flex;
+  flex-direction: column; }
+
+.form__label {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #114e4e;
+  line-height: 1.43;
+  margin: 0 0 7px; }
+
+.form__field {
+  margin: 0 0 15px 0;
+  padding: 0 0 0 15px;
+  max-width: 329px;
+  height: 30px;
+  border: solid 1px #a2deaf; }
+  .form__field--button {
+    margin: 0 0 15px 0; }
+
+.form__img {
+  display: flex;
+  flex-direction: column; }
+
+.form__box {
+  width: 30px;
+  height: 30px;
+  border: solid 1px #a2deaf;
+  margin: 0 0 15px 20px; }
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #6b6b6b;
+  opacity: 0.7; }
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #6b6b6b;
+  opacity: 0.7; }
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #6b6b6b;
+  opacity: 0.7; }
+
+.subir {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #ffffff;
+  text-align: center;
+  width: 140px;
+  height: 30px;
+  margin: 0 0 15px 0;
+  padding: 3px 22px 7px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  background-color: #e17334; }
+
+.span__row {
+  display: flex;
+  flex-direction: row; }
+
 .footer {
   display: flex;
   flex-direction: column;
