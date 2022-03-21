@@ -1,6 +1,9 @@
-.section1 {
+.preview-section {
   padding: 38px 0 40px 0;
   background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+}
+.preview-box {
+  padding: 0 19%;
   &__container {
     border: solid 1px $white-two;
     width: 75px;
@@ -26,170 +29,67 @@
       padding-top: 20px;
       padding-left: 8px;
     }
+    &_containerphoto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--article {
+        width: 240px;
+        height: 329px;
+        background-color: $white-two;
+        border-radius: 2px;
+        box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+        background-color: $white-two;
+      }
+      &--img {
+        padding: 10px 0;
+      }
+    }
   }
-  .containerdiv {
-    padding: 0 19%;
-  }
-  .section1__containerphoto {
+
+  .containercard {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &--article {
-      width: 240px;
-      height: 329px;
-      background-color: $white-two;
-      border-radius: 2px;
-      box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-      background-color: $white-two;
+    padding-top: 21px;
+    &__rectangle {
+      width: 5px;
+      height: 42px;
+      background-color: $dirty-blue;
     }
-    &--img {
-      padding: 10px 0;
-    }
-  }
-}
-
-.containercard {
-  display: flex;
-  padding-top: 21px;
-  &__rectangle {
-    width: 5px;
-    height: 42px;
-    background-color: $dirty-blue;
-  }
-  &__article {
-    &--title {
-      font-family: $font-third;
-      color: $dark-green-blue;
-      font-size: 18px;
-      padding-left: 20px;
-    }
-    &--text {
-      font-family: $font-third;
-      font-size: 16px;
-      color: $gunmetal;
-      padding-left: 20px;
+    &__article {
+      &--title {
+        font-family: $font-third;
+        color: $dark-green-blue;
+        font-size: 18px;
+        padding-left: 20px;
+      }
+      &--text {
+        font-family: $font-third;
+        font-size: 16px;
+        color: $gunmetal;
+        padding-left: 20px;
+      }
     }
   }
-}
-.list {
-  list-style: none;
-  margin-left: 20px;
-  display: flex;
-
-  &__item {
-    width: 32px;
-    height: 32px;
-    border-radius: 16px;
-    border: solid 2px $hospital-green;
+  .list {
+    list-style: none;
+    margin-left: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    &--link {
-      color: $dark-green-blue;
-      text-decoration: none;
+
+    &__item {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+      border: solid 2px $hospital-green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      &--link {
+        color: $dark-green-blue;
+        text-decoration: none;
+      }
     }
   }
-}
-
-/*ROSA*/
-.section-colours {
-  background-color: #d8d8d8;
-}
-.container-design {
-  display: flex;
-  flex-direction: row;
-  padding-top: 30px;
-  margin: 0px 20px 0px 20px;
-}
-
-.window {
-  margin-right: 10px;
-  margin-bottom: 25px;
-}
-
-.arrow {
-  margin-bottom: 11px;
-}
-
-.design-title {
-  margin-right: 168px;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.colours-title {
-  margin: 22px 82px 0px 19px;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.colour-section {
-  display: flex;
-  flex-direction: row;
-}
-
-.colours-title {
-  margin: 0px 82px 0px 19px;
-}
-
-#colours {
-  margin: 4px 10px 4px 0px;
-}
-
-.list-colours {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  margin: 20px 25px 0px 0px;
-}
-
-.square {
-  width: 30px;
-  height: 25px;
-}
-
-#one-a {
-  background-color: #114e4e;
-}
-
-#one-b {
-  background-color: #438792;
-}
-
-#one-c {
-  background-color: #a2deaf;
-}
-
-#colours2 {
-  margin: 24px 10px 0px 183px;
-}
-
-#two-a {
-  background-color: #420101;
-}
-
-#two-b {
-  background-color: #bd1010;
-}
-
-#two-c {
-  background-color: #e95626;
-}
-
-#colours3 {
-  margin: 24px 10px 0px 183px;
-}
-#three-a {
-  background-color: #3e5b65;
-}
-
-#three-b {
-  background-color: #eab052;
-}
-
-#three-c {
-  background-color: #a0c0cf;
 }
