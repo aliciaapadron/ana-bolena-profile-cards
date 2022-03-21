@@ -292,7 +292,6 @@
   background-color: #a0c0cf; }
 
 .fill__fieldset {
-  border-color: transparent;
   background-color: #ffffff;
   padding: 3%; }
 
@@ -392,6 +391,11 @@ textarea::placeholder {
 .span__row {
   display: flex;
   flex-direction: row; }
+
+.share__fieldset {
+  border-color: transparent;
+  background-color: #ffffff;
+  padding: 3%; }
 
 .footer {
   display: flex;
