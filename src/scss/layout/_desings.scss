@@ -1,5 +1,8 @@
 .section-colours {
   background-color: #d8d8d8;
+  @include tablet() {
+    width: 50vw;
+  }
 }
 .container-design {
   display: flex;

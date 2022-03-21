@@ -1,6 +1,21 @@
+.box-preview {
+  padding: 20px 40px 20px 0px;
+  background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
+
+  @include tablet() {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .preview-section {
   padding: 38px 0 40px 0;
-  background-image: linear-gradient(to bottom, #bfcdd0, #dde9ed);
+  background-image: linear-gradient(to bottom, $silver, $pale-grey);
+  border-radius: 6px;
+  @include tablet() {
+    width: 50vw;
+    padding: 173px 0 260px 0;
+  }
 }
 
 .preview-box {
@@ -36,6 +51,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    background-color: var(--white-two);
     &--img {
       padding: 10px 0;
     }
@@ -45,9 +63,8 @@
 .containercard {
   width: 240px;
   height: 329px;
-  background-color: $white-two;
   border-radius: 2px;
-  box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 $black-shadow;
   background-color: $white-two;
   &__box {
     display: flex;
