@@ -11,7 +11,7 @@
     width: 250px;
     height: 63px;
 
-    @media all and (min-width: 768px) {
+    @include tablet() {
       width: 419px;
       height: 105px;
     }
@@ -31,7 +31,7 @@
     color: $white-two;
     text-decoration: none;
 
-    @media all and (min-width: 768px) {
+    @include tablet() {
       margin-top: 186px;
     }
   }
@@ -51,7 +51,7 @@
     width: 264.8px;
     height: 38.4px;
 
-    @media all and (min-width: 768px) {
+    @include tablet() {
       width: 331px;
       height: 48px;
     }
@@ -70,7 +70,7 @@
     border-radius: 4px;
     border: solid 1.6px $dull-orange;
 
-    @media all and (min-width: 768px) {
+    @include tablet() {
       width: 325px;
       height: 86px;
       gap: 30px;
@@ -84,7 +84,7 @@
     color: $gunmetal;
     text-align: center;
 
-    @media all and (min-width: 768px) {
+    @include tablet() {
       font-size: 16px;
     }
   }
