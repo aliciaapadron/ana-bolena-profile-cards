@@ -7,16 +7,29 @@
   height: 90vh;
   gap: 60px;
 
+  &__img {
+    width: 250px;
+    height: 63px;
+
+    @media all and (min-width: 768px) {
+      width: 419px;
+      height: 105px;
+    }
+  }
+
   &__button {
     width: 129px;
     height: 42px;
     margin-top: 40px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 21px;
     background-color: $dirty-blue;
     color: $white-two;
+    text-decoration: none;
 
     @media all and (min-width: 768px) {
       margin-top: 186px;
