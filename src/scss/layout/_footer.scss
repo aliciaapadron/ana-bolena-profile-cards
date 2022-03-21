@@ -3,8 +3,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  padding: 18px 0 20px;
+  border-top: solid 1px $silver;
+  background-color: $white-two;
+  @include tablet() {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 40px 22px 41px;
+  }
   &__text {
     font-size: 14px;
     color: $brownish-grey;

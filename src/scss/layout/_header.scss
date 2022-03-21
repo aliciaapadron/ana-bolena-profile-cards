@@ -2,10 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include tablet() {
+    justify-content: left;
+  }
   &__img {
     width: 201px;
     height: 50px;
-    margin-top: 31px;
-    margin-bottom: 30px;
+    margin: 31px 0 30px;
+    @include tablet() {
+      margin-left: 40px;
+    }
   }
 }
