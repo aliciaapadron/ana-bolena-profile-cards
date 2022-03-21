@@ -1,19 +1,24 @@
 .box-preview {
-  padding: 20px 40px 20px 0px;
-  background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
-
   @include tablet() {
     display: flex;
     flex-direction: row-reverse;
+    padding: 20px 40px 20px 0px;
+    background-image: linear-gradient(to bottom, $white-four, $white-two 9%);
   }
 }
 
 .preview-section {
   padding: 38px 0 40px 0;
   background-image: linear-gradient(to bottom, $silver, $pale-grey);
-  border-radius: 6px;
   @include tablet() {
     width: 50vw;
+    padding: 173px 0 260px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+  }
+  @include desktop() {
+    width: 85vw;
     padding: 173px 0 260px 0;
   }
 }
@@ -54,6 +59,12 @@
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     background-color: var(--white-two);
+    @include tablet() {
+      width: fit-content;
+    }
+    @include desktop() {
+      width: fit-content;
+    }
     &--img {
       padding: 10px 0;
     }
