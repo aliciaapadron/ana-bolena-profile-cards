@@ -212,17 +212,26 @@
       color: #114e4e;
       text-decoration: none; }
 
+<<<<<<< HEAD
 .section-form {
   background-color: linear-gradient(to bottom, #f5f5f5, #ffffff 9%); }
   @media all and (min-width: 768px) {
     .section-form {
       width: 50vw; } }
+=======
+@media all and (min-width: 768px) {
+  .section-colours {
+    width: 50vw; } }
+
+.fieldset-colours {
+  padding-top: 27px;
+  padding-left: 20px;
+  background-color: #d9d9d9; }
+>>>>>>> 3bf89f2 (list box colours and titles aligned. There is a problem with some kind of purple margin in the rigth that I cannot find any solution)
 
 .container-design {
   display: flex;
-  flex-direction: row;
-  padding-top: 30px;
-  margin: 0px 20px 0px 20px; }
+  flex-direction: row; }
 
 .window {
   margin-right: 10px;
@@ -234,28 +243,33 @@
 .design-title {
   margin-right: 168px;
   text-transform: uppercase;
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'OpenSans';
+  /*NO FUNCIONA*/ }
 
 .colours-title {
-  margin: 22px 82px 0px 19px;
+  width: 62px;
+  height: 19px;
+  margin-left: 19px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   font-size: 14px; }
 
 .colour-section {
   display: flex;
-  flex-direction: row; }
-
-.colours-title {
-  margin: 0px 82px 0px 19px; }
+  flex-direction: row;
+  padding-bottom: 16px; }
 
 #colours {
-  margin: 4px 10px 4px 0px; }
+  width: 17px;
+  height: 17px;
+  margin: 10px 10px 0px 82px; }
 
 .list-colours {
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin: 20px 25px 0px 0px; }
+  margin-top: 6px; }
 
 .square {
   width: 30px;
@@ -271,7 +285,9 @@
   background-color: #a2deaf; }
 
 #colours2 {
-  margin: 24px 10px 0px 183px; }
+  width: 17px;
+  height: 17px;
+  margin: 10px 10px 0px 163px; }
 
 #two-a {
   background-color: #420101; }
@@ -283,7 +299,9 @@
   background-color: #e95626; }
 
 #colours3 {
-  margin: 24px 10px 0px 183px; }
+  width: 17px;
+  height: 17px;
+  margin: 10px 10px 0px 163px; }
 
 #three-a {
   background-color: #3e5b65; }
