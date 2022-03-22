@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
-        integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Awesome profile-cards</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header class="header">
-        <img class="header__img" src="./assets/images/tarjetas-molonas.png" alt="Logo imagenes" title="Logo imagenes" />
+      <img
+        class="header__img"
+        src="./assets/images/tarjetas-molonas.png"
+        alt="Logo imagenes"
+        title="Logo imagenes"
+      />
     </header>
+
     <section class="box-preview">
       <section class="preview-section">
         <div class="preview-box">
@@ -60,9 +77,9 @@
         </div>
       </section>
 
-      <section class="section-colours">
+      <section class="section-form">
         <form action="">
-          <fieldset>
+          <fieldset class="fieldset-colours">
             <div class="container-design">
               <a href="http://"> <i class="fa-solid fa-object-ungroup window"></i></a>
 
@@ -71,21 +88,22 @@
               <i class="fa-solid fa-chevron-down arrow"></i>
             </div>
 
-            <div class="colour-section">
-              <h3 class="colours-title">colores</h3>
+            <section class="section">
+              <div class="colour-section">
+                <h3 class="colours-title">colores</h3>
 
-              <input type="radio" id="colours" />
+              <input type="radio" id="colours" name="colors" />
               <label for="colors"></label>
 
-              <ul class="list-colours">
-                <li class="square" id="one-a"></li>
-                <li class="square" id="one-b"></li>
-                <li class="square" id="one-c"></li>
-              </ul>
-            </div>
+                <ul class="list-colours">
+                  <li class="square" id="one-a"></li>
+                  <li class="square" id="one-b"></li>
+                  <li class="square" id="one-c"></li>
+                </ul>
+              </div>
 
             <div class="colour-section">
-              <input type="radio" id="colours2" />
+              <input type="radio" id="colours2" name="colors" />
               <label for="colors"></label>
               <ul class="list-colours">
                 <li class="square" id="two-a"></li>
@@ -95,7 +113,7 @@
             </div>
 
             <div class="colour-section">
-              <input type="radio" id="colours3" />
+              <input type="radio" id="colours3" name="colors" />
               <label for="colors"></label>
               <ul class="list-colours">
                 <li class="square" id="three-a"></li>
@@ -112,34 +130,28 @@
               <i class="fa-solid fa-chevron-down fill__arrow"></i>
             </div>
 
-              <label class="form__label" for="name">Nombre completo</label>
-              <input class="form__field" type="text" id="name" name="name" placeholder="Ej: Sally Jill" />
-              <label class="form__label" for="job">Puesto</label>
-              <input class="form__field" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn" />
+            <label class="form__label" for="name">Nombre completo</label>
+            <input class="form__field" type="text" id="name" name="name" placeholder="Ej: Sally Jill" />
+            <label class="form__label" for="job">Puesto</label>
+            <input class="form__field" type="text" id="job" name="job" placeholder="Ej: Front-end unicorn" />
 
-              <label class="form__label form__img" for="img"> Imagen de perfil </label>
+            <label class="form__label form__img" for="img"> Imagen de perfil </label>
 
-              <span class="span__row">
-                <label for="file-upload" class="subir">Añadir imagen</label>
-                <input type="file" name="" id="file-upload" style="display: none" />
+            <span class="span__row">
+              <label for="file-upload" class="subir">Añadir imagen</label>
+              <input type="file" name="" id="file-upload" style="display: none" />
 
-                <div class="form__box"></div>
-              </span>
+              <div class="form__box"></div>
+            </span>
 
-              <label class="form__label" for="email">Email</label>
-              <input class="form__field" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
-              <label class="form__label" for="“telephone”">Teléfono</label>
-              <input class="form__field" type="“tel”" id="“telephone" name="telephone" placeholder="Ej: 55-555-55" />
-              <label class="form__label" for="text">Linkedin</label>
-              <input class="form__field" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.con/in/sally.hill" />
-              <label class="form__label" for="text">Github</label>
-              <input
-                class="form__field"
-                type="text"
-                id="github"
-                name="github"
-                placeholder="Ej: @sally-hill"
-              />
+            <label class="form__label" for="email">Email</label>
+            <input class="form__field" type="email" id="email" name="email" placeholder="Ej: sally-hill@gmail.com" />
+            <label class="form__label" for="“telephone”">Teléfono</label>
+            <input class="form__field" type="“tel”" id="“telephone" name="telephone" placeholder="Ej: 55-555-55" />
+            <label class="form__label" for="text">Linkedin</label>
+            <input class="form__field" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.con/in/sally.hill" />
+            <label class="form__label" for="text">Github</label>
+            <input class="form__field" type="text" id="github" name="github" placeholder="Ej: @sally-hill" />
           </fieldset>
           <fieldset class="share__fieldset">
             <div class="share__title">
@@ -154,16 +166,14 @@
             </div>
             <article class="share__article">
               <h2 class="share__title">La tarjeta ha sido creada:</h2>
-              <a class="share__link" href="https://awesome-profile-card.com?id=A456DF0001"
-                >https://awesome-profile-card.com?id=A456DF0001</a
-              >
+              <a class="share__link"
+                href="https://awesome-profile-card.com?id=A456DF0001">https://awesome-profile-card.com?id=A456DF0001</a>
               <div class="share__twitter">
                 <i class="fa-brands fa-twitter"></i>
-                <a>Compartir en twitter</a>
+                <button>Compartir en twitter</button>
               </div>
             </article>
           </fieldset>
-
         </form>
 
       </section>
@@ -174,7 +184,5 @@
       </p>
       <img class="footer__img" src="./assets/images/logo-adalab.png" alt="" />
     </footer>
-
-</body>
-
+  </body>
 </html>

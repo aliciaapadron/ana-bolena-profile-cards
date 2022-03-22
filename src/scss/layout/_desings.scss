@@ -1,14 +1,19 @@
-.section-colours {
-  background-color: linear-gradient(to bottom, $white-four, $white-two 9%);
-  @include tablet() {
-    width: 50vw;
-  }
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+.fieldset-colours {
+  padding-top: 27px;
+  padding-left: 20px;
+  background-color: hsla(0, 0%, 85%, 9%);
+  display: flex;
+  flex-direction: column;
+}
+
 .container-design {
   display: flex;
   flex-direction: row;
-  padding-top: 30px;
-  margin: 0px 20px 0px 20px;
 }
 
 .window {
@@ -24,10 +29,14 @@
   margin-right: 168px;
   text-transform: uppercase;
   font-size: 18px;
+  font-family: 'OpenSans'; /*NO FUNCIONA*/
 }
 
 .colours-title {
-  margin: 22px 82px 0px 19px;
+  width: 62px;
+  height: 19px;
+  margin-left: 19px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -35,21 +44,20 @@
 .colour-section {
   display: flex;
   flex-direction: row;
-}
-
-.colours-title {
-  margin: 0px 82px 0px 19px;
+  padding-bottom: 16px;
 }
 
 #colours {
-  margin: 4px 10px 4px 0px;
+  width: 17px;
+  height: 17px;
+  margin: 10px 10px 0px 82px;
 }
 
 .list-colours {
   list-style: none;
   display: flex;
   flex-direction: row;
-  margin: 20px 25px 0px 0px;
+  margin-top: 6px;
 }
 
 .square {
@@ -70,7 +78,9 @@
 }
 
 #colours2 {
-  margin: 24px 10px 0px 183px;
+  width: 17px;
+  height: 17px;
+  margin: 10px 10px 0px 163px;
 }
 
 #two-a {
@@ -86,7 +96,9 @@
 }
 
 #colours3 {
-  margin: 24px 10px 0px 183px;
+  width: 17px;
+  height: 17px;
+  margin: 10px 10px 0px 163px;
 }
 #three-a {
   background-color: #3e5b65;
