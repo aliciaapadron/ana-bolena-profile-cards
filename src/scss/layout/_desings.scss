@@ -1,13 +1,14 @@
-.section-colours {
-  @include tablet() {
-    width: 50vw;
-  }
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 .fieldset-colours {
   padding-top: 27px;
   padding-left: 20px;
   background-color: hsla(0, 0%, 85%, 9%);
+  display: flex;
+  flex-direction: column;
 }
 
 .container-design {
