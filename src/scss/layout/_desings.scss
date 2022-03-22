@@ -1,5 +1,5 @@
 .section-colours {
-  background-color: #d8d8d8;
+  background-color: linear-gradient(to bottom, $white-four, $white-two 9%);
   @include tablet() {
     width: 50vw;
   }
