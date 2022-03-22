@@ -127,3 +127,10 @@
     }
   }
 }
+
+.section-form {
+  background-color: linear-gradient(to bottom, $white-four, $white-two 9%);
+  @include tablet() {
+    width: 50vw;
+  }
+}
