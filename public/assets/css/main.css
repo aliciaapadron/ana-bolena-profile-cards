@@ -394,6 +394,7 @@ textarea::placeholder {
   flex-direction: row; }
 
 .share__fieldset {
+  border-color: transparent;
   background-color: #ffffff;
   padding: 3%;
   display: flex;
@@ -410,6 +411,34 @@ textarea::placeholder {
   max-width: 329px;
   align-items: center;
   justify-content: space-between; }
+
+.share__article {
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center; }
+
+.share__title {
+  font-size: 18px;
+  color: #54585a;
+  margin-bottom: 5px; }
+
+.share__link {
+  font-size: 12px;
+  color: #e17334;
+  margin-bottom: 10px; }
+
+.share__twitter {
+  font-size: 14px;
+  width: 181px;
+  height: 30px;
+  padding: 3px 9px 6px 10.5px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  background-color: #00a0f5;
+  text-align: center;
+  color: #ffffff; }
 
 .footer {
   display: flex;
