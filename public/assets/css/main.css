@@ -426,7 +426,6 @@ textarea::placeholder {
   height: -moz-fit-content;
   height: fit-content;
   width: auto;
-  border-top: 1px solid #6b6b6b58;
   align-items: center;
   justify-content: space-between; }
   @media all and (min-width: 768px) {
@@ -443,7 +442,7 @@ textarea::placeholder {
 .share__legend {
   padding: 10px 10px;
   text-transform: uppercase;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 600;
   color: #54585a;
@@ -463,6 +462,12 @@ textarea::placeholder {
   align-items: center;
   transform: translateX(28%); }
 
+.share__button {
+  background-color: #00a0f5;
+  border: none;
+  color: #ffffff;
+  font-family: 'Open Sans'; }
+
 .container__icon {
   color: #ffffff; }
 
@@ -470,7 +475,7 @@ textarea::placeholder {
   background: none;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   border: none;
   padding: 0;
   font-size: 18px;
@@ -481,7 +486,11 @@ textarea::placeholder {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  justify-items: center; }
+  justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #6b6b6b58;
+  border-top: 1px solid #6b6b6b58; }
 
 .share__title {
   font-size: 18px;
@@ -491,7 +500,8 @@ textarea::placeholder {
 .share__link {
   font-size: 12px;
   color: #e17334;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  text-decoration: none; }
 
 .share__twitter {
   font-size: 14px;
