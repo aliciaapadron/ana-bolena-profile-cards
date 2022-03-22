@@ -118,10 +118,10 @@
       display: flex;
       justify-content: center;
       align-items: center; } }
-
-@media all and (min-width: 1200px) {
-  width: 85vw;
-  padding: 173px 0 260px 0; }
+  @media all and (min-width: 1200px) {
+    .preview-section {
+      width: 85vw;
+      padding: 173px 0 260px 0; } }
 
 .preview-box {
   padding: 0 19%; }
