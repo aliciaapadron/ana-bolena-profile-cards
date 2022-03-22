@@ -395,7 +395,21 @@ textarea::placeholder {
 
 .share__fieldset {
   background-color: #ffffff;
-  padding: 3%; }
+  padding: 3%;
+  display: flex;
+  flex-direction: column; }
+
+.share__title {
+  display: flex;
+  flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: auto;
+  border-top: 1px solid #6b6b6b58;
+  max-width: 329px;
+  align-items: center;
+  justify-content: space-between; }
 
 .footer {
   display: flex;

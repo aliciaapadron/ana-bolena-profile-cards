@@ -1,6 +1,19 @@
 .share {
-    &__fieldset {
-        background-color: $white-two;
-        padding: 3%;
-    }
+  &__fieldset {
+    background-color: $white-two;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: auto;
+    border-top: 1px solid #6b6b6b58;
+    max-width: 329px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
