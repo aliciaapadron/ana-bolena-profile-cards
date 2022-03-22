@@ -148,6 +148,9 @@
       padding-top: 20px;
       padding-left: 8px; }
   .preview-box__containerphoto {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
