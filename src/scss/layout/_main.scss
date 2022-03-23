@@ -34,6 +34,11 @@
     @include tablet() {
       margin-top: 186px;
     }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 1.5px 1.5px 1.5px rgb(134, 130, 130);
+    }
   }
 }
 
