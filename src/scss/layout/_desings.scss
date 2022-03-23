@@ -5,14 +5,24 @@
   align-items: center;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
-  padding: 8% 8% 8% 8%;
+  // padding: 8% 8% 8% 8%;
+  // padding: 30px 30px 0 40px;
+  padding: 20px 20px 30px 20px;
   border: none;
+
+  @include tablet() {
+    align-items: flex-start;
+  }
 }
 
 .container-design {
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @include tablet() {
+    max-width: 329px;
+  }
 }
 
 .window-title {
@@ -45,6 +55,10 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  @include tablet() {
+    max-width: 329px;
+  }
 }
 .colours-title {
   width: 62px;
@@ -53,11 +67,12 @@
   font-size: 14px;
   font-family: 'Open Sans';
   font-weight: normal;
-  margin-left: 19px;
+  // margin-left: 19px;
 }
 
 .palette-section {
   display: flex;
+  gap: 5px;
 }
 
 .form-inputs {
@@ -65,27 +80,49 @@
   flex-direction: column;
 }
 
+// Incluyo un cajon en los inputs, habría que centrarlos
+.input__label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2px 0;
+}
 .inputs {
-  width: 17px;
-  height: 17px;
-  margin: 10px 10px 24px 0px;
+  // Cambio de 17 a 15 px
+  width: 15px;
+  height: 15px;
+  // margin: 10px 10px 24px 0px;
 }
 
 .palette {
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.list-1 {
+// Incluyo, cambios iguales en seccion list y colors
+.list-1,
+.list-2,
+.list-3 {
   display: flex;
   list-style: none;
 }
 
-.colour-1a {
+.colour-1a,
+.colour-1b,
+.colour-1c,
+.colour-2a,
+.colour-2b,
+.colour-2c,
+.colour-3a,
+.colour-3b,
+.colour-3c {
   width: 30px;
   height: 25px;
-  margin-bottom: 20px;
+}
+.colour-1a {
+  // margin-bottom: 20px;
   background: #114e4e;
 }
 
@@ -97,15 +134,13 @@
   background: #a2deaf;
 }
 
-.list-2 {
-  display: flex;
-  list-style: none;
-}
+// .list-2 {
+//   display: flex;
+//   list-style: none;
+// }
 
 .colour-2a {
-  width: 30px;
-  height: 25px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   background: #420101;
 }
 
@@ -117,15 +152,13 @@
   background: #e95626;
 }
 
-.list-3 {
-  display: flex;
-  list-style: none;
-}
+// .list-3 {
+//   display: flex;
+//   list-style: none;
+// }
 
 .colour-3a {
-  width: 30px;
-  height: 25px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   background: #3e5b65;
 }
 

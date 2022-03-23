@@ -225,13 +225,19 @@
   align-items: center;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
-  padding: 8% 8% 8% 8%;
+  padding: 20px 20px 30px 20px;
   border: none; }
+  @media all and (min-width: 768px) {
+    .fieldset-colours {
+      align-items: flex-start; } }
 
 .container-design {
   display: flex;
   justify-content: space-between;
   width: 100%; }
+  @media all and (min-width: 768px) {
+    .container-design {
+      max-width: 329px; } }
 
 .window-title {
   display: flex; }
@@ -259,6 +265,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%; }
+  @media all and (min-width: 768px) {
+    .colour-section {
+      max-width: 329px; } }
 
 .colours-title {
   width: 62px;
@@ -266,34 +275,51 @@
   text-transform: uppercase;
   font-size: 14px;
   font-family: 'Open Sans';
-  font-weight: normal;
-  margin-left: 19px; }
+  font-weight: normal; }
 
 .palette-section {
-  display: flex; }
+  display: flex;
+  gap: 5px; }
 
 .form-inputs {
   display: flex;
   flex-direction: column; }
 
+.input__label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2px 0; }
+
 .inputs {
-  width: 17px;
-  height: 17px;
-  margin: 10px 10px 24px 0px; }
+  width: 15px;
+  height: 15px; }
 
 .palette {
   list-style: none;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  gap: 10px; }
 
-.list-1 {
+.list-1,
+.list-2,
+.list-3 {
   display: flex;
   list-style: none; }
 
-.colour-1a {
+.colour-1a,
+.colour-1b,
+.colour-1c,
+.colour-2a,
+.colour-2b,
+.colour-2c,
+.colour-3a,
+.colour-3b,
+.colour-3c {
   width: 30px;
-  height: 25px;
-  margin-bottom: 20px;
+  height: 25px; }
+
+.colour-1a {
   background: #114e4e; }
 
 .colour-1b {
@@ -302,14 +328,7 @@
 .colour-1c {
   background: #a2deaf; }
 
-.list-2 {
-  display: flex;
-  list-style: none; }
-
 .colour-2a {
-  width: 30px;
-  height: 25px;
-  margin-bottom: 20px;
   background: #420101; }
 
 .colour-2b {
@@ -318,14 +337,7 @@
 .colour-2c {
   background: #e95626; }
 
-.list-3 {
-  display: flex;
-  list-style: none; }
-
 .colour-3a {
-  width: 30px;
-  height: 25px;
-  margin-bottom: 20px;
   background: #3e5b65; }
 
 .colour-3b {
