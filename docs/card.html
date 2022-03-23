@@ -80,47 +80,56 @@
       <section class="section-form">
         <form action="">
           <fieldset class="fieldset-colours">
-            <div class="container-design">
-              <a href="http://"> <i class="fa-solid fa-object-ungroup window"></i></a>
 
-              <legend class="design-title">Diseña</legend>
+            <section class="container-design">
+              <div class="window-title">
+                <a href="http://"> <i class="fa-solid fa-object-ungroup window"></i></a>
 
-              <i class="fa-solid fa-chevron-down arrow"></i>
-            </div>
-
-            <section class="section">
-              <div class="colour-section">
-                <h3 class="colours-title">colores</h3>
-
-              <input type="radio" id="colours" name="colors" />
-              <label for="colors"></label>
-
-                <ul class="list-colours">
-                  <li class="square" id="one-a"></li>
-                  <li class="square" id="one-b"></li>
-                  <li class="square" id="one-c"></li>
-                </ul>
+                <legend class="design-title">Diseña</legend>
               </div>
 
-            <div class="colour-section">
-              <input type="radio" id="colours2" name="colors" />
-              <label for="colors"></label>
-              <ul class="list-colours">
-                <li class="square" id="two-a"></li>
-                <li class="square" id="two-b"></li>
-                <li class="square" id="two-c"></li>
-              </ul>
-            </div>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </section>
 
-            <div class="colour-section">
-              <input type="radio" id="colours3" name="colors" />
-              <label for="colors"></label>
-              <ul class="list-colours">
-                <li class="square" id="three-a"></li>
-                <li class="square" id="three-b"></li>
-                <li class="square" id="three-c"></li>
-              </ul>
-            </div>
+
+            <section class="colour-section">
+              
+              <h3 class="colours-title">colores</h3>
+
+              
+              <section class="palette-section">
+                <div class="input__label">
+                <form class="form-inputs">
+                    <input name="input" type="radio" class="inputs" />
+                    <label for="colors"></label>
+                    <!-- Añado el mismo name para que solo se pueda seleccionar una opción  -->
+                    <input name="input"  type="radio" class="inputs"  />
+                    <label for="colors"></label>
+                    
+                    <input name="input"  type="radio" class="inputs" />
+                    <label for="colors"></label>
+                  </form>
+                </div>
+
+                <section class="palette">
+                  <ul class="list-1">
+                    <li class="colour-1a"></li>
+                    <li class="colour-1b"></li>
+                    <li class="colour-1c"></li>
+                  </ul>      
+
+                  <ul class="list-3">
+                    <li class="colour-2a"></li>
+                    <li class="colour-2b"></li>
+                    <li class="colour-2c"></li>
+                  </ul>      
+
+                <ul class="list-3">
+                  <li class="colour-3a"></li>
+                  <li class="colour-3b"></li>
+                  <li class="colour-3c"></li>
+                </ul>
+              </section>
           </fieldset>
 
           <fieldset class="fill__fieldset">
@@ -160,9 +169,11 @@
               <i class="fa-solid fa-chevron-down share__arrow"></i>
             </div>
 
-            <div class="share__container">
-              <i class="fa-solid fa-address-card fa-lg container__icon"></i>
-              <button class="container__button">Crear tarjeta</button>
+            <div class="share__containerposition">
+              <div class="share__container">
+                <i class="fa-solid fa-address-card fa-lg container__icon"></i>
+                <button class="container__button">Crear tarjeta</button>
+              </div>
             </div>
             <article class="share__article">
               <h2 class="share__title">La tarjeta ha sido creada:</h2>
