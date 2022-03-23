@@ -169,7 +169,10 @@
         width: -moz-fit-content;
         width: fit-content; } }
     .preview-box__containerphoto--img {
-      padding: 10px 0; }
+      margin: 10px 0;
+      width: 240px;
+      height: 200px;
+      background: url("../images/imagen-chica.png"); }
 
 .containercard {
   width: 240px;
