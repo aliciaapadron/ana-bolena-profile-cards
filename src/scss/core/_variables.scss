@@ -29,7 +29,5 @@ $black-20: rgba(0, 0, 0, 0.2);
 $black-shadow: rgba(0, 0, 0, 0.35);
 
 .rotate {
-  &:hover {
-    transform: rotate(540deg);
-  }
+  transform: rotate(540deg);
 }
