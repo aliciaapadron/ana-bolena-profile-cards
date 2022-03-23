@@ -226,17 +226,21 @@
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
-  padding: 20px 20px 30px 20px;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 20px 20px 20px;
   border: none; }
   @media all and (min-width: 768px) {
     .fieldset-colours {
-      align-items: flex-start; } }
+      align-items: flex-start;
+      padding: 0 30px 10px 40px;
+      max-width: 329px; } }
 
 .container-design {
   display: flex;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  border-top: 1px solid #6b6b6b58;
+  padding-top: 10px; }
   @media all and (min-width: 768px) {
     .container-design {
       max-width: 329px; } }
@@ -255,11 +259,11 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  color: red; }
+  color: #54585a; }
 
 .arrow {
   margin-bottom: 11px; }
@@ -277,7 +281,7 @@
   height: 19px;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal; }
 
 .palette-section {
@@ -351,10 +355,14 @@
 
 .fill__fieldset {
   background-color: #ffffff;
-  padding: 3%;
+  padding: 0 20px 20px 20px;
   display: flex;
   flex-direction: column;
   border: none; }
+  @media all and (min-width: 768px) {
+    .fill__fieldset {
+      padding: 0 30px 0 40px;
+      max-width: 329px; } }
 
 .fill__title {
   display: flex;
@@ -372,6 +380,9 @@
 .fill__container {
   display: flex;
   flex-direction: column; }
+  @media all and (min-width: 768px) {
+    .fill__container {
+      padding-bottom: 25px; } }
 
 .fill__keyboard {
   width: 6%;
@@ -459,9 +470,14 @@ textarea::placeholder {
 
 .share__fieldset {
   background-color: #ffffff;
-  padding: 3%; }
+  padding: 20px;
+  border: none; }
+  @media all and (min-width: 768px) {
+    .share__fieldset {
+      padding: 0 30px 10px 40px;
+      max-width: 329px; } }
 
-.share__title {
+.share__title1 {
   display: flex;
   flex-direction: row;
   height: -webkit-fit-content;
@@ -469,9 +485,10 @@ textarea::placeholder {
   height: fit-content;
   width: auto;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-top: 1px solid #6b6b6b58; }
   @media all and (min-width: 768px) {
-    .share__title {
+    .share__title1 {
       max-width: 329px; } }
 
 .share__share {

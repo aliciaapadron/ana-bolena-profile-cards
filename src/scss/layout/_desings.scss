@@ -3,14 +3,17 @@
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   // padding: 8% 8% 8% 8%;
   // padding: 30px 30px 0 40px;
-  padding: 20px 20px 30px 20px;
+  padding: 0 20px 20px 20px;
   border: none;
 
   @include tablet() {
     align-items: flex-start;
+    padding: 0 30px 10px 40px;
+    max-width: 329px;
+
   }
 }
 
@@ -18,6 +21,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  border-top: 1px solid #6b6b6b58;
+  padding-top: 10px;
 
   @include tablet() {
     max-width: 329px;
@@ -40,11 +45,11 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  color: red;
+  color: $gunmetal;
 }
 
 .arrow {
@@ -65,7 +70,7 @@
   height: 19px;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: normal;
 }
 

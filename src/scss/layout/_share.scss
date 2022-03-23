@@ -1,16 +1,24 @@
 .share {
   &__fieldset {
     background-color: $white-two;
-    padding: 3%;
+    padding: 20px;
+    border: none;
+
+    @include tablet() {
+      padding:0 30px 10px 40px;
+      max-width: 329px;
+    }
   }
 
-  &__title {
+  &__title1 {
     display: flex;
     flex-direction: row;
     height: fit-content;
     width: auto;
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid #6b6b6b58;
+ 
 
     @include tablet() {
       max-width: 329px;
@@ -34,6 +42,8 @@
     color: $gunmetal;
     width: 89%;
     text-align: left;
+
+
   }
   &__containerposition {
     display: grid;
