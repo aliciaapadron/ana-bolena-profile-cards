@@ -448,9 +448,7 @@ textarea::placeholder {
 
 .share__fieldset {
   background-color: #ffffff;
-  padding: 3%;
-  display: flex;
-  flex-direction: column; }
+  padding: 3%; }
 
 .share__title {
   display: flex;
@@ -482,6 +480,12 @@ textarea::placeholder {
   width: 89%;
   text-align: left; }
 
+.share__containerposition {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center; }
+
 .share__container {
   width: 199px;
   height: 50px;
@@ -492,8 +496,7 @@ textarea::placeholder {
   background-color: #e17334;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  transform: translateX(28%); }
+  align-items: center; }
 
 .share__button {
   background-color: #00a0f5;
