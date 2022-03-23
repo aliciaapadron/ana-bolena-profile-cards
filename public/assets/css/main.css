@@ -294,7 +294,7 @@
   width: 15px;
   height: 15px; }
 
-.palette {
+.colours-list {
   list-style: none;
   display: flex;
   flex-direction: column;
