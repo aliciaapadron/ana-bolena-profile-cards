@@ -349,7 +349,8 @@
   background-color: #ffffff;
   padding: 3%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: none; }
 
 .fill__title {
   display: flex;
@@ -363,6 +364,10 @@
   @media all and (min-width: 768px) {
     .fill__title {
       max-width: 329px; } }
+
+.fill__container {
+  display: flex;
+  flex-direction: column; }
 
 .fill__keyboard {
   width: 6%;
@@ -380,6 +385,9 @@
   color: #54585a;
   width: 89%;
   text-align: left; }
+
+.collapsed {
+  display: none; }
 
 .form__label {
   font-family: "Open Sans";
