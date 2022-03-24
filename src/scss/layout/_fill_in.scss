@@ -1,15 +1,14 @@
 .fill {
   &__fieldset {
     background-color: $white-two;
-    padding:0 20px 20px 20px;
+    padding: 0 20px 20px 20px;
     display: flex;
     flex-direction: column;
     border: none;
 
     @include tablet() {
-      padding:0 30px 0 40px;
+      padding: 0 30px 0 40px;
       max-width: 329px;
-
     }
   }
 
@@ -18,7 +17,6 @@
     flex-direction: row;
     height: fit-content;
     border-top: 1px solid #6b6b6b58;
-    // max-width: 329px;
     align-items: center;
     justify-content: space-between;
 
@@ -37,12 +35,10 @@
   }
 
   &__keyboard {
-    width: 6%;
     color: $dull-orange;
   }
 
   &__arrow {
-    width: 5%;
   }
 
   &__legend {
@@ -68,7 +64,7 @@
 // }
 
 .collapsed {
-  display:none;
+  display: none;
 }
 
 .form {
