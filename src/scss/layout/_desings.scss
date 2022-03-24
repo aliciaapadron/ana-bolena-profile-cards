@@ -49,12 +49,6 @@
   color: $gunmetal;
 }
 
-.arrow {
-  &:hover {
-    transform: rotate(540deg);
-  }
-}
-
 .colour-section {
   display: flex;
   justify-content: space-between;
