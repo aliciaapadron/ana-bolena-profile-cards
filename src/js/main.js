@@ -20,17 +20,31 @@ designBox.addEventListener('click', () => {
 
 console.log('>> Ready :)');
 
-const fillTitle = document.querySelector('.js-fill-title');
-const fillSection = document.querySelector('.js-fill-container');
+const formTitle = document.querySelector('.js-form-title');
+const formSection = document.querySelector('.js-form-container');
 
-fillTitle.addEventListener('click', () => {
-  console.log('funciona?');
-  fillSection.classList.toggle('collapsed');
+formTitle.addEventListener('click', () => {
+  formSection.classList.toggle('collapsed');
 });
 
-const arrow = document.querySelector('.js-arrow');
+// const arrow = document.querySelector('.js-arrow');
+// arrow.addEventListener('click', () => {
+//   arrow.classList.toggle('rotate');
+// });
 
-arrow.addEventListener('click', () => {
-  console.log('funciona:D');
-  arrow.classList.toggle('rotate');
-});
+// const formTitle2 = document.querySelectorAll('.js-form-title');
+// let formSection2 = document.querySelectorAll('.js-form-container');
+
+// for (const container of formTitle2) {
+//   container.addEventListener('click', () => {
+//     const sectionContainer = formSection2;
+//     sectionContainer.classList.toggle('collapsed');
+//   });
+// }
+
+const arrow2 = document.querySelectorAll('.js-arrow');
+for (const arrows of arrow2) {
+  arrows.addEventListener('click', () => {
+    arrows.classList.toggle('rotate');
+  });
+}
