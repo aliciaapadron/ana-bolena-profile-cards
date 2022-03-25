@@ -73,31 +73,36 @@ inputCircle3.addEventListener('click', () => {
 
 console.log('>> Ready :)');
 
-const formTitle = document.querySelector('.js-form-title');
-const formSection = document.querySelector('.js-form-container');
+// const formTitle = document.querySelector('.js-form-title');
+// const formSection = document.querySelector('.js-form-container');
 
-formTitle.addEventListener('click', () => {
-  formSection.classList.toggle('collapsed');
-});
+// formTitle.addEventListener('click', () => {
+//   formSection.classList.toggle('collapsed');
+// });
 
 // const arrow = document.querySelector('.js-arrow');
 // arrow.addEventListener('click', () => {
 //   arrow.classList.toggle('rotate');
 // });
 
-// const formTitle2 = document.querySelectorAll('.js-form-title');
-// let formSection2 = document.querySelectorAll('.js-form-container');
+const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 
-// for (const container of formTitle2) {
-//   container.addEventListener('click', () => {
-//     const sectionContainer = formSection2;
-//     sectionContainer.classList.toggle('collapsed');
-//   });
-// }
+// Itero los elementos del fildset a traves de una funcion
+for (const fieldset of formFieldsets) {
+  toggleCollapseFieldset(fieldset);
+}
 
-const arrow2 = document.querySelectorAll('.js-arrow');
-for (const arrows of arrow2) {
-  arrows.addEventListener('click', () => {
-    arrows.classList.toggle('rotate');
+function toggleCollapseFieldset(fieldset) {
+  // Recojo la referencia del HTML y la guardo en constantes
+  const title = fieldset.querySelector('.js-form-title');
+  const section = fieldset.querySelector('.js-form-container');
+  const arrow = fieldset.querySelector('.js-arrow');
+  // Creo evento para el click de la flecha
+  arrow.addEventListener('click', () => {
+    arrow.classList.toggle('rotate');
+  });
+  // Creo evento parra el collapsable
+  title.addEventListener('click', () => {
+    section.classList.toggle('collapsed');
   });
 }

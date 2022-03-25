@@ -32,3 +32,7 @@ $black-shadow: rgba(0, 0, 0, 0.35);
   // cursor: pointer;
   transform: rotate(540deg);
 }
+
+.collapsed {
+  display: none !important;
+}
