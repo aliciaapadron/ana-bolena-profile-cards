@@ -15,6 +15,44 @@ const inputCircle1 = document.querySelector('.js-inputColor1');
 const inputCircle2 = document.querySelector('.js-inputColor2');
 const inputCircle3 = document.querySelector('.js-inputColor3');
 
+const liColours1a = document.querySelector('.js-color-1a');
+const liColours1b = document.querySelector('.js-color-1b');
+const liColours1c = document.querySelector('.js-color-1c');
+const liColours2a = document.querySelector('.js-color-2a');
+const liColours2b = document.querySelector('.js-color-2b');
+const liColours2c = document.querySelector('.js-color-2c');
+const liColours3a = document.querySelector('.js-color-3a');
+const liColours3b = document.querySelector('.js-color-3b');
+const liColours3c = document.querySelector('.js-color-3c');
+
+// Funcion de recogida de datos
+
+function getInputDatas1() {
+  const inputCircleOne = {};
+  // Recogemos el color del primer cuadrado
+  inputCircleOne.color1 = liColours1a.innerHTML;
+  inputCircleOne.color2 = liColours1b.innerHTML;
+  inputCircleOne.color3 = liColours1c.innerHTML;
+  return inputCircleOne;
+}
+
+function getInputDatas2() {
+  const inputCircleTwo = {};
+  // Recogemos el color del segundo cuadrado
+  inputCircleTwo.color1 = liColours2a.innerHTML;
+  inputCircleTwo.color2 = liColours2b.innerHTML;
+  inputCircleTwo.color3 = liColours2c.innerHTML;
+  return inputCircleTwo;
+}
+function getInputDatas3() {
+  const inputCircleThree = {};
+  // Recogemos el color del tercer cuadrado
+  inputCircleThree.color1 = liColours3a.innerHTML;
+  inputCircleThree.color2 = liColours3b.innerHTML;
+  inputCircleThree.color3 = liColours3c.innerHTML;
+}
+
+// Funcion de pintar datos en HTML
 inputCircle1.addEventListener('click', () => {
   console.log('FUCK YES1');
 });
