@@ -6,16 +6,27 @@ const designBox = document.querySelector('.js-designBox');
 const colourDropDown = document.querySelector('.js-colour');
 const designArrow = document.querySelector('.js-designArrow');
 
-const rectangle = document.querySelector('.js-rectangle');
-const rectangle = document.querySelector('.js-rectangle');
+const rectangleProfile = document.querySelector('.js-rectangle');
+const titleProfile = document.querySelector('.js-container-tex__title');
+const titleCircle = document.querySelector('.js-preview-list');
+const icons = document.querySelector('.js-icons');
 
-//Functions
-designBox.addEventListener('click', () => {
-  console.log('mierda');
-  colourDropDown.classList.toggle('collapsed');
-  console.log('vale');
-  designArrow.classList.toggle('rotate');
+const inputCircle1 = document.querySelector('.js-inputColor1');
+const inputCircle2 = document.querySelector('.js-inputColor2');
+const inputCircle3 = document.querySelector('.js-inputColor3');
+
+inputCircle1.addEventListener('click', () => {
+  console.log('FUCK YES1');
 });
+inputCircle2.addEventListener('click', () => {
+  console.log('FUCK YES2');
+  rectangleProfile.classList.remove('colour-1a');
+  rectangleProfile.classList.add('colour-2a');
+});
+inputCircle3.addEventListener('click', () => {
+  console.log('FUCK YES3');
+});
+
 //FILL IN DROP-DOWN
 
 console.log('>> Ready :)');
