@@ -4,9 +4,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 90vh;
   gap: 60px;
-  padding-top: 95px;
 
   &__img {
     width: 250px;
@@ -15,7 +14,6 @@
     @include tablet() {
       width: 419px;
       height: 105px;
-      padding-top: 350px;
     }
   }
 

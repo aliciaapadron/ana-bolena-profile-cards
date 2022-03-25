@@ -44,12 +44,6 @@
     line-height: normal;
     color: $gunmetal;
   }
-
-  &__box--arrow {
-    &:hover {
-      transform: rotate(540deg);
-    }
-  }
   @include tablet() {
     max-width: 329px;
   }
