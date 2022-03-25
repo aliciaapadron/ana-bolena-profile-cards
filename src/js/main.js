@@ -50,7 +50,11 @@ function getInputDatas3() {
   inputCircleThree.color1 = liColours3a.innerHTML;
   inputCircleThree.color2 = liColours3b.innerHTML;
   inputCircleThree.color3 = liColours3c.innerHTML;
+  return inputCircleThree;
 }
+
+// Crear funcion para pintar el HTML de la tarjeta
+// function paintHtmlCircle1(client) {}
 
 // Funcion de pintar datos en HTML
 inputCircle1.addEventListener('click', () => {
