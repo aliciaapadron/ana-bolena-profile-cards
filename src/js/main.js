@@ -6,6 +6,9 @@ const designBox = document.querySelector('.js-designBox');
 const colourDropDown = document.querySelector('.js-colour');
 const designArrow = document.querySelector('.js-designArrow');
 
+const rectangle = document.querySelector('.js-rectangle');
+const rectangle = document.querySelector('.js-rectangle');
+
 //Functions
 designBox.addEventListener('click', () => {
   console.log('mierda');
