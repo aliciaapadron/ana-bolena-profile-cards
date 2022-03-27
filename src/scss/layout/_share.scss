@@ -1,12 +1,15 @@
 .share {
   &__fieldset {
     background-color: $white-two;
-    padding: 0 30px 20px 40px;
+
+    // Modifico padding en mobile
+    padding: 0 20px 20px 20px;
     border: none;
 
     @include tablet() {
       // Eliminamos el padding para evitar que se desajuste todo el contenedor principal al quitar el display
       // padding:0 30px 10px 40px;
+      padding: 0 30px 20px 40px;
       max-width: 329px;
     }
   }

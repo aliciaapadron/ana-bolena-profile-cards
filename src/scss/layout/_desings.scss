@@ -98,9 +98,6 @@
   @include tablet() {
     max-width: 329px;
   }
-  @include desktop() {
-    max-width: 0;
-  }
 }
 .colours-title {
   width: 62px;
