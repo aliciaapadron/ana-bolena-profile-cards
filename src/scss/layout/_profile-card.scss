@@ -12,7 +12,8 @@
   padding: 38px 0 40px 0;
   background-image: linear-gradient(to bottom, $silver, $pale-grey);
   @include tablet() {
-    width: 50vw;
+    // width: 80vw;
+    width: 65vw;
     height: 100vh;
     padding: 173px 0 260px 0;
     border-radius: 6px;
@@ -21,7 +22,7 @@
     align-items: center;
   }
   @include desktop() {
-    width: 85vw;
+    // width: 85vw;
     padding: 173px 0 260px 0;
   }
 }
@@ -135,7 +136,8 @@
 .section-form {
   background-color: linear-gradient(to bottom, $white-four, $white-two 9%);
   @include tablet() {
+    width: 35vw;
     // width: 50vw;
-    width: 50%;
+    // width: 50%;
   }
 }
