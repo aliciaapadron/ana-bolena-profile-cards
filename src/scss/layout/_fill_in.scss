@@ -20,9 +20,9 @@
     align-items: center;
     justify-content: space-between;
 
-    @include tablet() {
-      max-width: 329px;
-    }
+    // @include tablet() {
+    //   max-width: 329px;
+    // }
   }
 
   &__container {
@@ -44,7 +44,7 @@
   &__legend {
     margin: 10px 10px;
     text-transform: uppercase;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 18px;
     font-weight: 600;
     color: $gunmetal;
@@ -73,7 +73,7 @@
 
 .form {
   &__label {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-size: 14px;
     color: $dark-green-blue;
     line-height: 1.43;
@@ -108,14 +108,14 @@
 
 input::placeholder,
 textarea::placeholder {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 14px;
   color: $brownish-grey;
   opacity: 0.7;
 }
 
 .subir {
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: normal;
