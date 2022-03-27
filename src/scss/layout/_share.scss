@@ -1,7 +1,7 @@
 .share {
   &__fieldset {
     background-color: $white-two;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     border: none;
 
     @include tablet() {
@@ -18,7 +18,8 @@
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #6b6b6b58;
- 
+    border-bottom: 1px solid #6b6b6b58;
+
 
     @include tablet() {
       max-width: 329px;
@@ -32,7 +33,7 @@
   }
 
   &__legend {
-    padding: 10px 10px;
+    margin: 10px 10px;
     text-transform: uppercase;
     font-family: 'Open Sans';
     font-size: 18px;
@@ -69,6 +70,9 @@
   font-family: 'Open Sans';
 }
 
+.share__title1:hover {
+  cursor: pointer;
+}
 // estilos cuando se haya clicado
 // background-color: $white;
 
