@@ -76,6 +76,7 @@
 // estilos cuando se haya clicado
 // background-color: $white;
 
+
 .container {
   &__icon {
     color: $white-two;
@@ -94,7 +95,7 @@
 
 ///
 
-.share__article {
+.share__article{
   font-family: $font-main;
   display: grid;
   grid-template-columns: 1fr;
@@ -104,8 +105,6 @@
   padding-bottom: 30px;
   border-bottom: 1px solid #6b6b6b58;
   border-top: 1px solid #6b6b6b58;
-  // ESTO DE ABAJO PARA OCULTARLO
-  display: none;
 }
 .share__title {
   font-size: 18px;
@@ -130,4 +129,12 @@
   background-color: $azure;
   text-align: center;
   color: $white-two;
+}
+
+.white {
+  background-color: $white;
+}
+.hidden {
+  // ESTO DE ABAJO PARA OCULTARLO
+  display: none;
 }

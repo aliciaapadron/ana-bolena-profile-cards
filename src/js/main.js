@@ -2,6 +2,9 @@
 
 //DESIGN DROP-DOWN
 //Constants
+const shareBtn = document.querySelector('.js-share-container');
+const shareMsg = document.querySelector('.js-share-article');
+
 const designBox = document.querySelector('.js-designBox');
 const colourDropDown = document.querySelector('.js-colour');
 const designArrow = document.querySelector('.js-designArrow');
@@ -106,3 +109,9 @@ function toggleCollapseFieldset(fieldset) {
     section.classList.toggle('collapsed');
   });
 }
+
+shareBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  shareBtn.classList.add('white');
+  shareMsg.classList.remove('hidden');
+});
