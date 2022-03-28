@@ -1,5 +1,6 @@
 .box-preview {
   @include tablet() {
+    width: fit-content;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
