@@ -135,7 +135,6 @@
 
 .section-form {
   background-color: linear-gradient(to bottom, $white-four, $white-two 9%);
-  max-width: 280px;
 
   @include tablet() {
     width: 35vw;
@@ -144,6 +143,6 @@
 
   @include desktop() {
     // TODO
-    max-width: 450px;
+    max-width: 350px;
   }
 }

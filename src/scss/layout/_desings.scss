@@ -9,7 +9,6 @@
   border: none;
 
   @include tablet() {
-    align-items: flex-start;
     padding: 0 30px 0 40px;
   }
 }
