@@ -59,7 +59,10 @@
   font-family: 'Open Sans';
 }
 
-.share__title1:hover {
+.share__title1:hover, 
+.share__container:hover,
+.container__button:hover
+ {
   cursor: pointer;
 }
 // estilos cuando se haya clicado
