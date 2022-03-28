@@ -97,12 +97,9 @@ function toggleCollapseFieldset(fieldset) {
   const title = fieldset.querySelector('.js-form-title');
   const section = fieldset.querySelector('.js-form-container');
   const arrow = fieldset.querySelector('.js-arrow');
-  // Creo evento para el click de la flecha
-  arrow.addEventListener('click', () => {
-    arrow.classList.toggle('rotate');
-  });
   // Creo evento parra el collapsable
   title.addEventListener('click', () => {
     section.classList.toggle('collapsed');
+    arrow.classList.toggle('rotate');
   });
 }
