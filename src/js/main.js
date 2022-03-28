@@ -76,18 +76,6 @@ inputCircle3.addEventListener('click', () => {
 
 console.log('>> Ready :)');
 
-// const formTitle = document.querySelector('.js-form-title');
-// const formSection = document.querySelector('.js-form-container');
-
-// formTitle.addEventListener('click', () => {
-//   formSection.classList.toggle('collapsed');
-// });
-
-// const arrow = document.querySelector('.js-arrow');
-// arrow.addEventListener('click', () => {
-//   arrow.classList.toggle('rotate');
-// });
-
 const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 
 // Itero los elementos del fildset a traves de una funcion
@@ -100,13 +88,10 @@ function toggleCollapseFieldset(fieldset) {
   const title = fieldset.querySelector('.js-form-title');
   const section = fieldset.querySelector('.js-form-container');
   const arrow = fieldset.querySelector('.js-arrow');
-  // Creo evento para el click de la flecha
-  arrow.addEventListener('click', () => {
-    arrow.classList.toggle('rotate');
-  });
   // Creo evento parra el collapsable
   title.addEventListener('click', () => {
     section.classList.toggle('collapsed');
+    arrow.classList.toggle('rotate');
   });
 }
 
