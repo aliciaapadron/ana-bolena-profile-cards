@@ -80,14 +80,16 @@ const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 
 function collapseFieldsetsExceptCurrent(event) {
   formFieldsets.forEach((fieldset) => {
-    if (fieldset !== event.currentTarget) {
+    if (fieldset !== event.currentTarget.parentElement) {
       fieldset.classList.add('collapsed');
     }
   });
 }
 
 for (const fieldset of formFieldsets) {
-  fieldset.addEventListener('click', (event) => {
+  const title = fieldset.querySelector('.js-form-title');
+
+  title.addEventListener('click', (event) => {
     // Escondemos todos los fieldset menos el pulsado
     collapseFieldsetsExceptCurrent(event);
 
