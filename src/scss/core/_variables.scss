@@ -27,12 +27,3 @@ $rusty-red: #bd1010;
 $black: #000;
 $black-20: rgba(0, 0, 0, 0.2);
 $black-shadow: rgba(0, 0, 0, 0.35);
-
-.rotate {
-  // cursor: pointer;
-  transform: rotate(540deg);
-}
-
-.collapsed {
-  display: none !important;
-}

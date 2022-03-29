@@ -78,20 +78,21 @@ console.log('>> Ready :)');
 
 const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 
-// Itero los elementos del fildset a traves de una funcion
-for (const fieldset of formFieldsets) {
-  toggleCollapseFieldset(fieldset);
+function collapseFieldsetsExceptCurrent(event) {
+  formFieldsets.forEach((fieldset) => {
+    if (fieldset !== event.currentTarget) {
+      fieldset.classList.add('collapsed');
+    }
+  });
 }
 
-function toggleCollapseFieldset(fieldset) {
-  // Recojo la referencia del HTML y la guardo en constantes
-  const title = fieldset.querySelector('.js-form-title');
-  const section = fieldset.querySelector('.js-form-container');
-  const arrow = fieldset.querySelector('.js-arrow');
-  // Creo evento parra el collapsable
-  title.addEventListener('click', () => {
-    section.classList.toggle('collapsed');
-    arrow.classList.toggle('rotate');
+for (const fieldset of formFieldsets) {
+  fieldset.addEventListener('click', (event) => {
+    // Escondemos todos los fieldset menos el pulsado
+    collapseFieldsetsExceptCurrent(event);
+
+    // Mostramos/Escondemos el fieldset pulsado
+    fieldset.classList.toggle('collapsed');
   });
 }
 

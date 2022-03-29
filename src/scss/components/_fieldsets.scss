@@ -1,0 +1,7 @@
+.fieldset.collapsed .fieldset__container {
+  display: none;
+}
+
+.fieldset:not(.collapsed) .fieldset__arrow {
+  transform: rotate(540deg);
+}
