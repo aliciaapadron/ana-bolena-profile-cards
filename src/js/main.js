@@ -10,7 +10,6 @@ const colourDropDown = document.querySelector('.js-colour');
 const designArrow = document.querySelector('.js-designArrow');
 
 const rectangleProfile = document.querySelector('.js-rectangle');
-const titleProfile = document.querySelector('.js-container-tex__title');
 const titleCircle = document.querySelector('.js-preview-list');
 const icons = document.querySelector('.js-icons');
 
@@ -27,6 +26,13 @@ const liColours2c = document.querySelector('.js-color-2c');
 const liColours3a = document.querySelector('.js-color-3a');
 const liColours3b = document.querySelector('.js-color-3b');
 const liColours3c = document.querySelector('.js-color-3c');
+
+// Constante formulario
+
+const nameForm = document.querySelector('.js__fillIn__name');
+const jobForm = document.querySelector('.js__fillIn__job');
+const nameProfile = document.querySelector('.js__card__name');
+const jobProfile = document.querySelector('.js__card__job');
 
 // Funcion de recogida de datos
 
@@ -73,6 +79,18 @@ inputCircle3.addEventListener('click', () => {
 });
 
 //FILL IN DROP-DOWN
+// función con la cual recoges el valor del id y pinta ese valor en el HTML
+const pressKey = (event) => {
+  let element = event.currentTarget.id;
+  console.log(element);
+  if (element === 'name') {
+    nameProfile.innerHTML = event.currentTarget.value;
+  } else if (element === 'job') {
+    jobProfile.innerHTML = event.currentTarget.value;
+  }
+};
+nameForm.addEventListener('keyup', pressKey);
+jobForm.addEventListener('keyup', pressKey);
 
 console.log('>> Ready :)');
 
