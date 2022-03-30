@@ -11,7 +11,7 @@ const designArrow = document.querySelector('.js-designArrow');
 
 const rectangleProfile = document.querySelector('.js-rectangle');
 const titleCircle = document.querySelector('.js-preview-list');
-const icons = document.querySelector('.js-icons');
+const icons = document.querySelectorAll('.js-icons');
 
 const inputCircle1 = document.querySelector('.js-inputColor1');
 const inputCircle2 = document.querySelector('.js-inputColor2');
@@ -37,7 +37,7 @@ const jobProfile = document.querySelector('.js__card__job');
 // Funcion de recogida de datos
 
 function getInputDatas1() {
-  const inputCircleOne = {};
+  let inputCircleOne = {};
   // Recogemos el color del primer cuadrado
   inputCircleOne.color1 = liColours1a.innerHTML;
   inputCircleOne.color2 = liColours1b.innerHTML;
@@ -66,16 +66,39 @@ function getInputDatas3() {
 // function paintHtmlCircle1(client) {}
 
 // Funcion de pintar datos en HTML
+
+function colorCard(classContains, classListRemove, cardString) {
+  if (
+    cardString.classList.contains(classContains) ||
+    cardString.classList.contains(classListRemove)
+  ) {
+    cardString.classList.remove(classListRemove);
+    cardString.classList.remove(classContains);
+  }
+}
+
 inputCircle1.addEventListener('click', () => {
-  console.log('FUCK YES1');
+  colorCard('colour-2b', 'colour-3b', rectangleProfile);
+  colorCard('colorText-1b', 'colorText-1c', nameProfile);
+  colorCard('.colorText-1b', '.colorText-1c', icons);
+  rectangleProfile.classList.add('colour-1b');
+  nameProfile.classList.add('colorText-1a');
+  icons.classList.add('colorText-1a');
 });
 inputCircle2.addEventListener('click', () => {
-  console.log('FUCK YES2');
-  rectangleProfile.classList.remove('colour-1a');
-  rectangleProfile.classList.add('colour-2a');
+  colorCard('colour-1b', 'colour-3b', rectangleProfile);
+  colorCard('colorText-1a', 'colorText-1c', nameProfile);
+
+  rectangleProfile.classList.add('colour-2b');
+  nameProfile.classList.add('colorText-1b');
 });
+
 inputCircle3.addEventListener('click', () => {
-  console.log('FUCK YES3');
+  colorCard('colour-2b', 'colour-1b', rectangleProfile);
+  colorCard('colorText-1a', 'colorText-1b', nameProfile);
+
+  rectangleProfile.classList.add('colour-3b');
+  nameProfile.classList.add('colorText-1c');
 });
 
 //FILL IN DROP-DOWN

@@ -94,13 +94,10 @@
   .rectangle {
     width: 5px;
     height: 42px;
-    background-color: $dirty-blue;
   }
-
   .container-tex {
     &__title {
       font-family: $font-third;
-      color: $dark-green-blue;
       font-size: 18px;
       padding-left: 20px;
     }
@@ -122,13 +119,12 @@
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    border: solid 2px $hospital-green;
+
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
     &--link {
-      color: $dark-green-blue;
       text-decoration: none;
     }
   }

@@ -5,3 +5,34 @@
 .fieldset:not(.collapsed) .fieldset__arrow {
   transform: rotate(540deg);
 }
+
+.grey {
+  background-color: grey;
+}
+.color {
+  color: grey !important;
+}
+.border {
+  border: solid 2px grey !important;
+}
+
+.color-1a {
+  border: 2px solid $dark-green-blue;
+}
+.color-1b {
+  border: 2px solid $dirty-blue;
+}
+
+.color-1c {
+  border: 2px solid $hospital-green;
+}
+
+.colorText-1a {
+  color: $dark-green-blue !important;
+}
+.colorText-1b {
+  color: $dried-blood !important;
+}
+.colorText-1c {
+  color: $slate !important;
+}
