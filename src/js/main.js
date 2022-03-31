@@ -2,39 +2,33 @@
 
 //DESIGN DROP-DOWN
 //Constants
-const shareBtn = document.querySelector('.js-share-container');
-const shareMsg = document.querySelector('.js-share-article');
-const designBox = document.querySelector('.js-designBox');
-const colourDropDown = document.querySelector('.js-colour');
-const designArrow = document.querySelector('.js-designArrow');
 
-const formFieldsets = document.querySelectorAll('.js-form-fieldset');
-const inputCircle1 = document.querySelector('.js-inputColor1');
-const inputCircle2 = document.querySelector('.js-inputColor2');
-const inputCircle3 = document.querySelector('.js-inputColor3');
-const cardProfile = document.querySelector('.js-palette');
+function getElement(className) {
+  return document.querySelector(className);
+}
+
+const shareBtn = getElement('.js-share-container');
+const shareMsg = getElement('.js-share-article');
+const designBox = getElement('.js-designBox');
+const colourDropDown = getElement('.js-colour');
+const designArrow = getElement('.js-designArrow');
+const inputCircle1 = getElement('.js-inputColor1');
+const inputCircle2 = getElement('.js-inputColor2');
+const inputCircle3 = getElement('.js-inputColor3');
+const cardProfile = getElement('.js-palette');
 // Constante formulario
-const nameForm = document.querySelector('.js__fillIn__name');
-const jobForm = document.querySelector('.js__fillIn__job');
-const nameProfile = document.querySelector('.js__card__name');
-const jobProfile = document.querySelector('.js__card__job');
+const nameForm = getElement('.js__fillIn__name');
+// const nameForm = querySelector('.js__fillIn__name');
+const jobForm = getElement('.js__fillIn__job');
+const nameProfile = getElement('.js__card__name');
+const jobProfile = getElement('.js__card__job');
+const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 
 function modifyCardClasses(classAdd, classremove1, classremove2) {
   cardProfile.classList.add(classAdd);
   cardProfile.classList.remove(classremove1);
   cardProfile.classList.remove(classremove2);
 }
-inputCircle1.addEventListener('click', () => {
-  modifyCardClasses('palette1', 'palette2', 'palette3');
-});
-
-inputCircle2.addEventListener('click', () => {
-  modifyCardClasses('palette2', 'palette1', 'palette3');
-});
-
-inputCircle3.addEventListener('click', () => {
-  modifyCardClasses('palette3', 'palette1', 'palette2');
-});
 
 const pressKey = (event) => {
   let element = event.currentTarget.id;
@@ -47,9 +41,6 @@ const pressKey = (event) => {
     jobProfile.innerHTML = event.currentTarget.value;
   }
 };
-
-nameForm.addEventListener('keyup', pressKey);
-jobForm.addEventListener('keyup', pressKey);
 
 console.log('>> Ready :)');
 
@@ -73,6 +64,17 @@ for (const fieldset of formFieldsets) {
   });
 }
 
+inputCircle1.addEventListener('click', () => {
+  modifyCardClasses('palette1', 'palette2', 'palette3');
+});
+inputCircle2.addEventListener('click', () => {
+  modifyCardClasses('palette2', 'palette1', 'palette3');
+});
+inputCircle3.addEventListener('click', () => {
+  modifyCardClasses('palette3', 'palette1', 'palette2');
+});
+nameForm.addEventListener('keyup', pressKey);
+jobForm.addEventListener('keyup', pressKey);
 shareBtn.addEventListener('click', (event) => {
   event.preventDefault();
   shareBtn.classList.add('white');
