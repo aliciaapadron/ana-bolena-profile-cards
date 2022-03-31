@@ -6,33 +6,48 @@
   transform: rotate(540deg);
 }
 
-.grey {
-  background-color: grey;
-}
-.color {
-  color: grey !important;
-}
-.border {
-  border: solid 2px grey !important;
-}
+.palette1 {
+  .outline {
+    background-color: $dirty-blue;
+  }
+  .name {
+    color: $dark-green-blue;
+  }
+  .icon {
+    border: solid 2px $hospital-green;
 
-.color-1a {
-  border: 2px solid $dark-green-blue;
+    .link {
+      color: $dark-green-blue;
+    }
+  }
 }
-.color-1b {
-  border: 2px solid $dirty-blue;
-}
+.palette2 {
+  .outline {
+    background-color: $rusty-red;
+  }
+  .name {
+    color: $dried-blood;
+  }
+  .icon {
+    border: solid 2px $tomato;
 
-.color-1c {
-  border: 2px solid $hospital-green;
+    .link {
+      color: $dried-blood;
+    }
+  }
 }
+.palette3 {
+  .outline {
+    background-color: $faded-orange;
+  }
+  .name {
+    color: $slate;
+  }
+  .icon {
+    border: solid 2px $light-grey-blue;
 
-.colorText-1a {
-  color: $dark-green-blue !important;
-}
-.colorText-1b {
-  color: $dried-blood !important;
-}
-.colorText-1c {
-  color: $slate !important;
+    .link {
+      color: $slate;
+    }
+  }
 }
