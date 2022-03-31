@@ -17,6 +17,7 @@ const cardProfile = document.querySelector('.js-palette');
 const nameForm = document.querySelector('.js__fillIn__name');
 const jobForm = document.querySelector('.js__fillIn__job');
 const nameProfile = document.querySelector('.js__card__name');
+const jobProfile = document.querySelector('.js__card__job');
 
 function modifyCardClasses(classAdd, classremove1, classremove2) {
   cardProfile.classList.add(classAdd);
@@ -38,8 +39,10 @@ inputCircle3.addEventListener('click', () => {
 const pressKey = (event) => {
   let element = event.currentTarget.id;
   console.log(element);
+
   if (element === 'name') {
     nameProfile.innerHTML = event.currentTarget.value;
+    return validText;
   } else if (element === 'job') {
     jobProfile.innerHTML = event.currentTarget.value;
   }
