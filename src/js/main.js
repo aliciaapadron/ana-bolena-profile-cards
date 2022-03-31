@@ -32,8 +32,6 @@ function modifyCardClasses(classAdd, classremove1, classremove2) {
 
 const pressKey = (event) => {
   let element = event.currentTarget.id;
-  console.log(element);
-
   if (element === 'name') {
     nameProfile.innerHTML = event.currentTarget.value;
     return validText;
