@@ -34,7 +34,6 @@ const pressKey = (event) => {
   let element = event.currentTarget.id;
   if (element === 'name') {
     nameProfile.innerHTML = event.currentTarget.value;
-    return validText;
   } else if (element === 'job') {
     jobProfile.innerHTML = event.currentTarget.value;
   }
