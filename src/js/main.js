@@ -19,25 +19,30 @@ const cardProfile = getElement('.js-palette');
 // Constante formulario
 const nameForm = getElement('.js__fillIn__name');
 // const nameForm = querySelector('.js__fillIn__name');
+const form = getElement('.js_form');
 const jobForm = getElement('.js__fillIn__job');
 const nameProfile = getElement('.js__card__name');
 const jobProfile = getElement('.js__card__job');
+const emailProfile = getElement('.js_email');
+const phoneProfile = getElement('.js_phone');
+const linkedinProfile = getElement('.js_linkedin');
+const githubProfile = getElement('.js_github');
 const formFieldsets = document.querySelectorAll('.js-form-fieldset');
-
+let data = {
+  name: '',
+  job: '',
+  email: '',
+  phone: '',
+  linkedin: '',
+  github: '',
+  palette: '01',
+  photo: '',
+};
 function modifyCardClasses(classAdd, classremove1, classremove2) {
   cardProfile.classList.add(classAdd);
   cardProfile.classList.remove(classremove1);
   cardProfile.classList.remove(classremove2);
 }
-
-const pressKey = (event) => {
-  let element = event.currentTarget.id;
-  if (element === 'name') {
-    nameProfile.innerHTML = event.currentTarget.value;
-  } else if (element === 'job') {
-    jobProfile.innerHTML = event.currentTarget.value;
-  }
-};
 
 console.log('>> Ready :)');
 
@@ -70,8 +75,45 @@ inputCircle2.addEventListener('click', () => {
 inputCircle3.addEventListener('click', () => {
   modifyCardClasses('palette1', 'palette3', 'palette2');
 });
-nameForm.addEventListener('keyup', pressKey);
-jobForm.addEventListener('keyup', pressKey);
+
+function handleKeyup(event) {
+  const inputElement = event.target;
+
+  if (inputElement.name === 'name') {
+    nameProfile.innerHTML = data.name;
+    data.name = inputElement.value;
+    if (inputElement.value === '') {
+      nameProfile.innerHTML = 'Escribe tu nombre';
+    }
+  } else if (inputElement.name === 'job') {
+    jobProfile.innerHTML = data.job;
+    data.job = inputElement.value;
+    if (inputElement.value === '') {
+      nameProfile.value = 'Escribe tu profesion';
+    }
+  } else if (inputElement.name === 'email') {
+    data.email = inputElement.value;
+  } else if (inputElement.name === 'phone') {
+    data.phone = inputElement.value;
+  } else if (inputElement.name === 'linkedin') {
+    data.linkedin = inputElement.value;
+  } else if (inputElement.name === 'github') {
+    data.github = inputElement.value;
+  }
+
+  renderPreview();
+  console.log(data);
+}
+form.addEventListener('keyup', handleKeyup);
+
+function renderPreview() {
+  emailProfile.href = `mailto:${data.email}`;
+  linkedinProfile.href = `${data.linkedin}`;
+  githubProfile.href = `${data.github}`;
+}
+
+form.addEventListener('keyup', handleKeyup);
+
 shareBtn.addEventListener('click', (event) => {
   event.preventDefault();
   shareBtn.classList.add('white');

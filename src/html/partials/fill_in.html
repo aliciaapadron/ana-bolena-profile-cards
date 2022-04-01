@@ -14,7 +14,6 @@
       name="name"
       placeholder="Ej: Sally Jill"
       maxlength="20"
-      autocomplete="off"
       required
     />
     <label class="form__label" for="job">Puesto</label>
@@ -25,7 +24,6 @@
       name="job"
       placeholder="Ej: Front-end unicorn"
       maxlength="24"
-      autocomplete="off"
       required
     />
 
@@ -33,11 +31,11 @@
 
     <span class="span__row">
       <label for="file-upload" class="subir">Añadir imagen</label>
-      <input type="file" name="" id="file-upload" style="display: none" />
+      <input type="file" name="image" id="file-upload" style="display: none" />
       <div class="form__box"></div>
     </span>
 
-    <label class="form__label" for="email" required>Email</label>
+    <label class="form__label js_email" for="email" required>Email</label>
     <input
       class="form__field"
       type="email"
@@ -47,15 +45,15 @@
     />
     <label class="form__label" for="telephone" required>Teléfono</label>
     <input
-      class="form__field"
+      class="form__field js_phone"
       type="“tel”"
       id="“telephone"
-      name="telephone"
+      name="phone"
       placeholder="Ej: 55-555-55"
     />
     <label class="form__label" for="text">Linkedin</label>
     <input
-      class="form__field"
+      class="form__field js_linkedin"
       type="text"
       id="linkedin"
       name="linkedin"
@@ -63,7 +61,7 @@
     />
     <label class="form__label" for="text">Github</label>
     <input
-      class="form__field"
+      class="form__field js_github"
       type="text"
       id="github"
       name="github"
