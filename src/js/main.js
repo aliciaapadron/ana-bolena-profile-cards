@@ -62,13 +62,13 @@ for (const fieldset of formFieldsets) {
 }
 
 inputCircle1.addEventListener('click', () => {
-  modifyCardClasses('palette1', 'palette2', 'palette3');
+  modifyCardClasses('palette3', 'palette2', 'palette1');
 });
 inputCircle2.addEventListener('click', () => {
-  modifyCardClasses('palette2', 'palette1', 'palette3');
+  modifyCardClasses('palette2', 'palette3', 'palette1');
 });
 inputCircle3.addEventListener('click', () => {
-  modifyCardClasses('palette3', 'palette1', 'palette2');
+  modifyCardClasses('palette1', 'palette3', 'palette2');
 });
 nameForm.addEventListener('keyup', pressKey);
 jobForm.addEventListener('keyup', pressKey);
