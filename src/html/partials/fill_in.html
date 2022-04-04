@@ -30,9 +30,17 @@
     <label class="form__label form__img" for="img"> Imagen de perfil </label>
 
     <span class="span__row">
-      <label for="file-upload" class="subir">Añadir imagen</label>
-      <input type="file" name="image" id="file-upload" style="display: none" />
-      <div class="form__box"></div>
+      <label for="file-upload" class="subir js__profile-trigger"
+        >Añadir imagen</label
+      >
+      <input
+        class="js__profile-upload-btn"
+        type="file"
+        name="image"
+        id="file-upload"
+        style="display: none"
+      />
+      <div class="form__box js__profile-preview"></div>
     </span>
 
     <label class="form__label js_email" for="email" required>Email</label>

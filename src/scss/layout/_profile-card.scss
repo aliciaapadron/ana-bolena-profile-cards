@@ -76,6 +76,9 @@
       width: 240px;
       height: 200px;
       background: url('../images/imagen-chica.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
   }
 }
