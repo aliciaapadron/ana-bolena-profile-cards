@@ -78,10 +78,9 @@ inputCircle3.addEventListener('click', () => {
 
 function handleKeyup(event) {
   const inputElement = event.target;
-
   if (inputElement.name === 'name') {
-    nameProfile.innerHTML = data.name;
     data.name = inputElement.value;
+    nameProfile.innerHTML = data.name;
     if (inputElement.value === '') {
       nameProfile.innerHTML = 'Escribe tu nombre';
     }
@@ -89,7 +88,7 @@ function handleKeyup(event) {
     jobProfile.innerHTML = data.job;
     data.job = inputElement.value;
     if (inputElement.value === '') {
-      nameProfile.value = 'Escribe tu profesion';
+      jobProfile.innerHTML = 'Escribe tu profesion';
     }
   } else if (inputElement.name === 'email') {
     data.email = inputElement.value;
