@@ -27,6 +27,7 @@ const emailProfile = getElement('.js_email');
 const phoneProfile = getElement('.js_phone');
 const linkedinProfile = getElement('.js_linkedin');
 const githubProfile = getElement('.js_github');
+const resetButton = getElement('.js__reset');
 const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 let data = {
   name: '',
@@ -101,16 +102,41 @@ function handleKeyup(event) {
   }
 
   renderPreview();
-  console.log(data);
+  resetButton.addEventListener('click', handleReset);
 }
-form.addEventListener('keyup', handleKeyup);
+function handleReset() {
+  const profileImage = document.querySelector('.js__profile-image');
+  // const profilePreview = document.querySelector('.js__profile-preview');
+  form.reset();
+  nameProfile.innerHTML = 'Nombre profile';
+  jobProfile.innerHTML = 'Front-end developer';
+  emailProfile.href = '';
+  linkedinProfile.href = '';
+  githubProfile.href = '';
+  modifyCardClasses('palette3', 'palette2', 'palette1');
+  // const srcImage = url('../images/imagen-chica.png');
+  // profileImage.removeAttribute('backgroundImage');
+  // profilePreview.style.backgroundImage = srcImage;
+  console.log('click');
+  data = {
+    name: '',
+    job: '',
+    email: '',
+    phone: '',
+    linkedin: '',
+    github: '',
+    palette: '01',
+    photo: '',
+  };
+  return data;
+}
 
 function renderPreview() {
   emailProfile.href = `mailto:${data.email}`;
   linkedinProfile.href = `${data.linkedin}`;
   githubProfile.href = `${data.github}`;
+  phoneProfile.href = `${data.phone}`;
 }
-
 form.addEventListener('keyup', handleKeyup);
 
 shareBtn.addEventListener('click', (event) => {
