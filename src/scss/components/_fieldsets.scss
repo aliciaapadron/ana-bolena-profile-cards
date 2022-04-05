@@ -6,18 +6,18 @@
   transform: rotate(540deg);
 }
 
-.palette3 {
+.palette1 {
   .outline {
-    background-color: $dirty-blue;
+    background-color: $faded-orange;
   }
   .name {
-    color: $dark-green-blue;
+    color: $slate;
   }
   .icon {
-    border: solid 2px $hospital-green;
+    border: solid 2px $light-grey-blue;
 
     .link {
-      color: $dark-green-blue;
+      color: $slate;
     }
   }
 }
@@ -36,18 +36,18 @@
     }
   }
 }
-.palette1 {
+.palette3 {
   .outline {
-    background-color: $faded-orange;
+    background-color: $dirty-blue;
   }
   .name {
-    color: $slate;
+    color: $dark-green-blue;
   }
   .icon {
-    border: solid 2px $light-grey-blue;
+    border: solid 2px $hospital-green;
 
     .link {
-      color: $slate;
+      color: $dark-green-blue;
     }
   }
 }

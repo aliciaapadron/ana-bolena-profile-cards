@@ -6,7 +6,6 @@
 function getElement(className) {
   return document.querySelector(className);
 }
-
 const shareBtn = getElement('.js-share-container');
 const shareMsg = getElement('.js-share-article');
 const designBox = getElement('.js-designBox');
@@ -36,7 +35,7 @@ let data = {
   phone: '',
   linkedin: '',
   github: '',
-  palette: '01',
+  palette: 1,
   photo: '',
 };
 function modifyCardClasses(classAdd, classremove1, classremove2) {
@@ -69,12 +68,15 @@ for (const fieldset of formFieldsets) {
 
 inputCircle1.addEventListener('click', () => {
   modifyCardClasses('palette3', 'palette2', 'palette1');
+  data.palette = 1;
 });
 inputCircle2.addEventListener('click', () => {
   modifyCardClasses('palette2', 'palette3', 'palette1');
+  data.palette = 2;
 });
 inputCircle3.addEventListener('click', () => {
   modifyCardClasses('palette1', 'palette3', 'palette2');
+  data.palette = 3;
 });
 
 function handleKeyup(event) {
@@ -102,22 +104,23 @@ function handleKeyup(event) {
   }
 
   renderPreview();
-  resetButton.addEventListener('click', handleReset);
 }
+resetButton.addEventListener('click', handleReset);
 function handleReset() {
+  console.log('click');
   const profileImage = document.querySelector('.js__profile-image');
-  // const profilePreview = document.querySelector('.js__profile-preview');
+  const profilePreview = document.querySelector('.js__profile-preview');
   form.reset();
+
   nameProfile.innerHTML = 'Nombre profile';
   jobProfile.innerHTML = 'Front-end developer';
   emailProfile.href = '';
   linkedinProfile.href = '';
   githubProfile.href = '';
   modifyCardClasses('palette3', 'palette2', 'palette1');
-  // const srcImage = url('../images/imagen-chica.png');
-  // profileImage.removeAttribute('backgroundImage');
-  // profilePreview.style.backgroundImage = srcImage;
-  console.log('click');
+  // const srcImage = 'url(./assets/images/imagen-chica.png)';
+  profilePreview.style.backgroundImage = '';
+  profileImage.style.backgroundImage = 'url(./assets/images/imagen-chica.png)';
   data = {
     name: '',
     job: '',
@@ -125,7 +128,7 @@ function handleReset() {
     phone: '',
     linkedin: '',
     github: '',
-    palette: '01',
+    palette: 3,
     photo: '',
   };
   return data;
@@ -144,3 +147,31 @@ shareBtn.addEventListener('click', (event) => {
   shareBtn.classList.add('white');
   shareMsg.classList.remove('hidden');
 });
+
+//  hacer fetch con POST y enviar el objeto (comprobar que sea igual)
+// coger el resultado que nos da la api
+// modificiarlo por el enlace de compartir
+// https://awesome-profile-cards.herokuapp.com/card/
+
+shareBtn.addEventListener('click', createCard);
+
+const feedback = getElement('.js_message_error');
+function createCard(event) {
+  event.preventDefault();
+  console.log(data);
+  fetch('https://awesome-profile-cards.herokuapp.com/card', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((result) => {
+      if (result.success === data) {
+        feedback.innerHTML = 'Genial, la tarjeta ha sido creada!';
+      } else {
+        feedback.innerHTML = 'Falta algún dato en el formulario';
+      }
+    });
+}
+
+// Da error, preguntar el por que
