@@ -153,25 +153,40 @@ shareBtn.addEventListener('click', (event) => {
 // modificiarlo por el enlace de compartir
 // https://awesome-profile-cards.herokuapp.com/card/
 
-shareBtn.addEventListener('click', createCard);
-
+const URLCard = getElement('.js_URL');
 const feedback = getElement('.js_message_error');
 function createCard(event) {
   event.preventDefault();
   console.log(data);
-  fetch('https://awesome-profile-cards.herokuapp.com/card', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((result) => {
-      if (result.success === data) {
-        feedback.innerHTML = 'Genial, la tarjeta ha sido creada!';
-      } else {
-        feedback.innerHTML = 'Falta algún dato en el formulario';
-      }
-    });
+  if (
+    data.name !== '' &&
+    data.job !== '' &&
+    data.linkedin !== '' &&
+    data.github !== '' &&
+    data.photo !== '' &&
+    data.palette !== '' &&
+    data.email !== ''
+  ) {
+    feedback.innerHTML = '';
+    shareBtn.classList.remove('white');
+
+    fetch('https://awesome-profile-cards.herokuapp.com/card', {
+      method: 'POST', // enviar datos a la API
+      headers: { 'Content-Type': 'application/json' }, //tipo de dato
+      body: JSON.stringify(data), //datos que de quiero enviar, en este caso es data, pasandolo a string
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        if (result.success) {
+          feedback.innerHTML = 'Genial, la tarjeta ha sido creada!';
+          shareBtn.classList.add('white');
+          URLCard.innerHTML = result.cardURL;
+          URLCard.href = result.cardURL;
+        }
+      });
+  } else {
+    feedback.innerHTML = 'Falta algún dato en el formulario';
+  }
 }
 
-// Da error, preguntar el por que
+shareBtn.addEventListener('click', createCard);
