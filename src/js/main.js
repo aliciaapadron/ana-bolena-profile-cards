@@ -28,6 +28,7 @@ const linkedinProfile = getElement('.js_linkedin');
 const githubProfile = getElement('.js_github');
 const resetButton = getElement('.js__reset');
 const formFieldsets = document.querySelectorAll('.js-form-fieldset');
+const shareTwitterBtn = document.querySelector('.js_twitterShareBtn');
 let data = {
   name: '',
   job: '',
@@ -189,4 +190,11 @@ function createCard(event) {
   }
 }
 
+function shareOnTwitter() {
+  window.location.href =
+    'https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20profesional.%20Conóceme!%20&url=' +
+    URLCard.href;
+}
+
 shareBtn.addEventListener('click', createCard);
+shareTwitterBtn.addEventListener('click', shareOnTwitter);
