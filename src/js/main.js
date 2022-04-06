@@ -189,6 +189,7 @@ function createCard(event) {
           URLCard.href = result.cardURL;
         }
       });
+    shareTwitterBtn.removeAttribute('disabled');
   } else {
     feedback.innerHTML = 'Falta algún dato en el formulario';
   }
