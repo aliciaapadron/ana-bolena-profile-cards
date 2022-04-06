@@ -29,6 +29,8 @@ const githubProfile = getElement('.js_github');
 const resetButton = getElement('.js__reset');
 const formFieldsets = document.querySelectorAll('.js-form-fieldset');
 const shareTwitterBtn = document.querySelector('.js_twitterShareBtn');
+const URLCard = getElement('.js_URL');
+const feedback = getElement('.js_message_error');
 let data = {
   name: '',
   job: '',
@@ -53,6 +55,10 @@ function collapseFieldsetsExceptCurrent(event) {
       fieldset.classList.add('collapsed');
     }
   });
+  if (shareBtn.classList.contains('white')) {
+    shareBtn.classList.remove('white');
+    feedback.innerHTML = '';
+  }
 }
 
 for (const fieldset of formFieldsets) {
@@ -154,8 +160,6 @@ shareBtn.addEventListener('click', (event) => {
 // modificiarlo por el enlace de compartir
 // https://awesome-profile-cards.herokuapp.com/card/
 
-const URLCard = getElement('.js_URL');
-const feedback = getElement('.js_message_error');
 function createCard(event) {
   event.preventDefault();
   console.log(data);
