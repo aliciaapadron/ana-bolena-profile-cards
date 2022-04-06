@@ -190,10 +190,11 @@ function createCard(event) {
   }
 }
 
-function shareOnTwitter() {
-  window.location.href =
-    'https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20profesional.%20Conóceme!%20&url=' +
-    URLCard.href;
+function shareOnTwitter(event) {
+  event.preventDefault();
+  console.log(URLCard.href);
+  let url = `https://twitter.com/intent/tweet?text=He%20creado%20una%20tarjeta%20profesional.%20Conóceme!%20&url=${URLCard.href}`;
+  window.location.href = url;
 }
 
 shareBtn.addEventListener('click', createCard);
