@@ -59,15 +59,13 @@
   font-family: 'Open Sans';
 }
 
-.share__title1:hover, 
+.share__title1:hover,
 .share__container:hover,
-.container__button:hover
- {
+.container__button:hover {
   cursor: pointer;
 }
 // estilos cuando se haya clicado
 // background-color: $white;
-
 
 .container {
   &__icon {
@@ -87,7 +85,7 @@
 
 ///
 
-.share__article{
+.share__article {
   font-family: $font-main;
   display: grid;
   grid-template-columns: 1fr;
@@ -102,6 +100,7 @@
   font-size: 18px;
   color: $gunmetal;
   margin-bottom: 5px;
+  text-align: center;
 }
 .share__link {
   font-size: 12px;
