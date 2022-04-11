@@ -1,6 +1,5 @@
 .fill {
   &__fieldset {
-    background-color: $white-two;
     padding: 0 20px 0px 20px;
 
     display: flex;
@@ -31,16 +30,16 @@
   }
 
   &__keyboard {
-    color: $dull-orange;
+    color: $darkbrown;
   }
 
   &__legend {
     margin: 10px 10px;
     text-transform: uppercase;
-    font-family: 'Open Sans';
+    font-family: $font-main;
     font-size: 18px;
     font-weight: 600;
-    color: $gunmetal;
+    color: $darkbrown;
     width: 89%;
     text-align: left;
   }
@@ -62,9 +61,9 @@
 
 .form {
   &__label {
-    font-family: 'Open Sans';
+    font-family: $font-main;
     font-size: 14px;
-    color: $dark-green-blue;
+    color: $darkbrown;
     line-height: 1.43;
     margin: 0 0 7px;
   }
@@ -74,7 +73,7 @@
     padding: 0 0 0 15px;
     max-width: 329px;
     height: 30px;
-    border: solid 1px $hospital-green;
+    border: solid 1px $darkbrown;
 
     &--button {
       margin: 0 0 15px 0;
@@ -89,7 +88,7 @@
   &__box {
     width: 30px;
     height: 30px;
-    border: solid 1px $hospital-green;
+    border: solid 1px $darkbrown;
     margin: 0 0 15px 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -99,27 +98,26 @@
 
 input::placeholder,
 textarea::placeholder {
-  font-family: 'Open Sans';
+  font-family: $font-main;
   font-size: 14px;
   color: $brownish-grey;
   opacity: 0.7;
 }
 
 .subir {
-  font-family: 'Open Sans';
+  font-family: $font-main;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: normal;
-  color: $white-two;
+  color: $lightbrown;
   text-align: center;
 
   width: 140px;
   height: 30px;
-  margin: 0 0 15px 0;
-  padding: 3px 22px 7px;
+  padding-top: 5px;
   border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  background-color: $dull-orange;
+  background-color: $darkbrown;
 }
 
 .span__row {

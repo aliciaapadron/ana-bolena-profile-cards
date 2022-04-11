@@ -1,4 +1,6 @@
 .header {
+  background-image: url('../images/fondo.jpg');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,8 +8,7 @@
     justify-content: left;
   }
   &__img {
-    width: 201px;
-    height: 50px;
+    width: 300px;
     margin: 31px 0 30px;
     @include tablet() {
       margin-left: 40px;

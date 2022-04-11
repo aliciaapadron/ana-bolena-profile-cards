@@ -1,6 +1,5 @@
 .share {
   &__fieldset {
-    background-color: $white-two;
     padding: 0 20px 20px 20px;
     border: none;
 
@@ -20,16 +19,16 @@
     border-bottom: 1px solid #6b6b6b58;
   }
   &__share {
-    color: $dull-orange;
+    color: $darkbrown;
   }
 
   &__legend {
     margin: 10px 10px;
     text-transform: uppercase;
-    font-family: 'Open Sans';
+    font-family: $font-main;
     font-size: 18px;
     font-weight: 600;
-    color: $gunmetal;
+    color: $darkbrown;
     width: 89%;
     text-align: left;
   }
@@ -46,17 +45,17 @@
     padding: 0 15px 0 15px;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    background-color: $dull-orange;
+    background-color: $darkbrown;
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 }
 .share__button {
-  background-color: $azure;
+  background-color: $darkbrown;
   border: none;
-  color: $white-two;
-  font-family: 'Open Sans';
+  color: $lightbrown;
+  font-family: $font-main;
 }
 
 .share__title1:hover,
@@ -69,13 +68,13 @@
 
 .container {
   &__icon {
-    color: $white-two;
+    color: $lightbrown;
   }
   &__button {
     background: none;
-    color: $white-two;
+    color: $lightbrown;
     text-transform: uppercase;
-    font-family: 'Open Sans';
+    font-family: $font-main;
     border: none;
     padding: 0;
     font-size: 18px;
@@ -98,13 +97,13 @@
 }
 .share__title {
   font-size: 18px;
-  color: $gunmetal;
+  color: $darkbrown;
   margin-bottom: 5px;
   text-align: center;
 }
 .share__link {
   font-size: 11px;
-  color: $dull-orange;
+  color: $darkbrown;
   margin-bottom: 10px;
   text-decoration: none;
   text-align: center;
@@ -113,16 +112,20 @@
   font-size: 14px;
   width: 181px;
   height: 30px;
-  padding: 3px 9px 6px 10.5px;
+  padding: 5px;
   border-radius: 3px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-  background-color: $azure;
+  background-color: $darkbrown;
   text-align: center;
   color: $white-two;
 }
+.fa-twitter {
+  color: $lightbrown;
+}
 
 .white {
-  background-color: $white;
+  background-color: $darkbrown;
+  opacity: 70%;
 }
 .hidden {
   // ESTO DE ABAJO PARA OCULTARLO

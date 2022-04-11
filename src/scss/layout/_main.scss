@@ -1,5 +1,6 @@
 .main {
-  background-color: $white-four;
+  background-image: url('../images/fondo.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,8 +9,7 @@
   gap: 60px;
 
   &__img {
-    width: 250px;
-    height: 63px;
+    width: 100vw;
 
     @include tablet() {
       width: 419px;
@@ -28,8 +28,9 @@
     font-size: 16px;
     text-transform: uppercase;
     border-radius: 21px;
-    background-color: $dirty-blue;
-    color: $white-two;
+    background-color: $darkbrown;
+    color: $sand;
+    font-family: $font-main;
     text-decoration: none;
 
     @include tablet() {
@@ -47,13 +48,13 @@
   text-align: center;
 
   &__title {
-    color: $dull-orange;
+    color: $darkbrown;
     font-family: $font-second;
     font-weight: 900;
   }
 
   &__text {
-    color: $dark-green-blue;
+    color: $darkbrown;
     width: 264.8px;
     height: 38.4px;
 
@@ -74,7 +75,7 @@
     gap: 24px;
     text-align: center;
     border-radius: 4px;
-    border: solid 1.6px $dull-orange;
+    border: solid 1.6px $darkbrown;
 
     @include tablet() {
       width: 325px;
@@ -87,7 +88,7 @@
     font-size: 12.8px;
     font-family: $font-main;
     font-weight: 100;
-    color: $gunmetal;
+    color: $darkbrown;
     text-align: center;
 
     @include tablet() {
@@ -100,7 +101,7 @@
   }
 
   &__link {
-    color: $dull-orange;
+    color: $darkbrown;
     width: 25px;
     height: 26px;
   }

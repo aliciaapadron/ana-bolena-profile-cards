@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-main;
   padding: 0 20px 0px 20px;
 
   border: none;
@@ -29,18 +29,18 @@
 
   &__box--window {
     margin-right: 10px;
-    color: $dull-orange;
+    color: $darkbrown;
   }
 
   &__box--title {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 600;
-    font-family: 'Open Sans';
+    font-family: $font-main;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
-    color: $gunmetal;
+    color: $darkbrown;
   }
 }
 
@@ -100,7 +100,7 @@
   color: $gunmetal;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: 'Open Sans';
+  font-family: $font-main;
   font-weight: normal;
 }
 

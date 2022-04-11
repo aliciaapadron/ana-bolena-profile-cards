@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 18px 0 20px;
-  border-top: solid 1px $silver;
-  background-color: $white-two;
+  background-color: $lightbrown;
   @include tablet() {
     flex-direction: row;
     justify-content: space-between;
@@ -13,7 +12,7 @@
   }
   &__text {
     font-size: 14px;
-    color: $brownish-grey;
+    color: $darkbrown;
     font-family: $font-main;
   }
   &__img {
