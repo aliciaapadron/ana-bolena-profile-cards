@@ -187,6 +187,7 @@ function createCard(event) {
           shareBtn.classList.add('white');
           URLCard.innerHTML = result.cardURL;
           URLCard.href = result.cardURL;
+          localStorage.setItem('data', JSON.stringify(data));
         }
       });
     shareTwitterBtn.removeAttribute('disabled');
