@@ -205,3 +205,22 @@ function shareOnTwitter(event) {
 
 shareBtn.addEventListener('click', createCard);
 shareTwitterBtn.addEventListener('click', shareOnTwitter);
+
+function initApp() {
+  // cache crudo
+  const cacheRaw = localStorage.getItem('data');
+  // si el cache no es nulo pintame lo que hay en data
+  if (cacheRaw !== null) {
+    const cache = JSON.parse(cacheRaw);
+    data = cache;
+    nameProfile.innerHTML = data.name;
+    jobProfile.innerHTML = data.job;
+    emailProfile.href = `mailto:${data.email}`;
+    phoneProfile.href = `tel:${data.phone}`;
+    linkedinProfile.href = data.linkedin;
+    githubProfile.href = data.github;
+    profileImage.style.backgroundImage = `url(${data.photo})`;
+    profilePreview.style.backgroundImage = `url(${data.photo})`;
+  }
+}
+initApp();
