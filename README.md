@@ -41,4 +41,5 @@ Con esta web hemos demostrado que, a parte de maquetar, sabemos crear una págin
 - [Aran Diez](https://github.com/AranDiez)
 - [Patricia Pallarés](https://github.com/patriciapallares)
 - [Rosa Codina](https://github.com/rosacodina)
-- [Gloria Rodríguez](https://github.com/gloriarodrife) -[Alicia Padrón](https://github.com/aliciaapadron)
+- [Gloria Rodríguez](https://github.com/gloriarodrife) 
+-[Alicia Padrón](https://github.com/aliciaapadron)
